@@ -12,7 +12,7 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="favicon.ico">
+
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	
@@ -25,11 +25,30 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <select class="header__select select">
+
+
+                        <!-- <select class="header__select select">
                             
                             <option class="header__option" value="ENG">EUR</option>
                             <option class="header__option" value="RU">RUB</option>
-                        </select>
+                        </select> -->
+
+                        <div class="header__select header__select">
+                            <p>EN</p> 
+                            <img src="img/icons/arrow-down.svg" alt="">
+
+
+                            <div class="header__select-drop">
+                                <a href="#" class="header__select-lang">EN</a>
+                                <a href="#" class="header__select-lang">RU</a>
+
+
+                            </div>
+
+                        </div>
+
+
+
                     </li>
                     <li class="header__item"><a href="#" class="header__link">Купить</a></li>
                     <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
@@ -103,11 +122,19 @@
         
         <div class="header-mobile__wrap">
 
-            <select class="header__select select">
-                        
-                <option class="header__option" value="ENG">EUR</option>
-                <option class="header__option" value="RU">RUB</option>
-            </select>
+            <div class="header__select header__select">
+                <p>EN</p> 
+                <img src="img/icons/arrow-down.svg" alt="">
+
+
+                <div class="header__select-drop">
+                    <a href="#" class="header__select-lang">EN</a>
+                    <a href="#" class="header__select-lang">RU</a>
+
+
+                </div>
+
+            </div>
             
         </div>
     </div> 
@@ -132,7 +159,7 @@
 <div class="block">
     <div class="container">
         <div class="block__inner">
-            <h1 class="block__title animate__animated animate__bounceInUp" data-wow-delay="1s">
+            <h1 class="block__title animate__animated animate__bounceInUp">
 				Сервис для автоматизированной продажи монет <span class="block__title block__primary">FIFA21</span>
 
 			</h1>
@@ -149,22 +176,22 @@
 
 		<div class="block__grid">
 			<div class="block__item">
-				<img src="img/icons/finger.png" alt="" class="block__icon">
+				<img src="img/icons/hand.svg" alt="" class="block__icon wow animate__animated animate__zoomIn">
 				<p class="block__grid-title">Комфортно</p>
 				<p class="block__grid-text">На любом устройстве сделка будет максимально комфортной и быстрой. От вас требуется пару кликов </p>
 			</div>
 			<div class="block__item">
-				<img src="img/icons/bolt.png" alt="" class="block__icon">
+				<img src="img/icons/flash.svg" alt="" class="block__icon wow animate__animated animate__zoomIn">
 				<p class="block__grid-title">Быстро</p>
 				<p class="block__grid-text">Наша система максимально автоматизирована. Поэтому сроки доставки будут минимальными</p>
 			</div>
 			<div class="block__item">
-				<img src="img/icons/sheild.png" alt="" class="block__icon">
+				<img src="img/icons/shield.svg" alt="" class="block__icon wow animate__animated animate__zoomIn">
 				<p class="block__grid-title">Безопасно</p>
 				<p class="block__grid-text">Благодаря качественным алгоритмам клиенты получают свои монеты максимально быстро и безопасно</p>
 			</div>
 			<div class="block__item">
-				<img src="img/icons/money.png" alt="" class="block__icon">
+				<img src="img/icons/funds.svg" alt="" class="block__icon wow animate__animated animate__zoomIn">
 				<p class="block__grid-title">Выгодно</p>
 				<p class="block__grid-text">Вы получаете ровно столько монет, за сколько заплатили. все комиссии мы берем на себя. Помимо этого, 
 					с каждой покупки Вы получаете щедрый кешбек. </p>
@@ -177,13 +204,13 @@
 
 
 	<div class="block__wrapper" >
-		<img src="img/home/player.png" alt="" class="block__player">
+		<img src="img/home/player.png" alt="" class="block__player animate__animated animate__bounceInUp">
 		<div class="block__dark"></div>
 		<div class="block__ellipse"></div>
 
-		<div data-speed="5" class="block__gold block__gold--small layer"><img src="img/home/gold-small.png" alt="" ></div>
-		<div data-speed="10" class="block__gold block__gold--medium layer"><img src="img/home/gold.png" alt=""></div>
-		<div data-speed="15" class="block__gold block__gold--big layer"><img src="img/home/gold-big.png" alt="" ></div>
+		<div data-speed="3" class="block__gold block__gold--small layer"><img src="img/home/gold-small.png" alt="" ></div>
+		<div data-speed="5" class="block__gold block__gold--medium layer"><img src="img/home/gold.png" alt=""></div>
+		<div data-speed="8" class="block__gold block__gold--big layer"><img src="img/home/gold-big.png" alt="" ></div>
 		
 		
 		
@@ -301,49 +328,110 @@
 		<div class="blog__inner">
 			<div class="title__wrapper"><h2 class="title">Последние статьи</h2> <a href="#" class="btn">Смотреть все статьи </a></div>
 			
-			<div class="blog__wrapper">
+			<div class="article__row">
 
-				<div class="blog__item">
-					<img class="blog__img" src="img/home/blog.png" alt="">
-					<a href="#" class="blog__title">На Кипре объявили жесткий локдаун для местных  и туристов</a>
+                <div class="article__item">
 
-					<div class="blog__row">
-						<p class="blog__date">24.04.21</p>
-						<div class="blog__views">
-							<img src="img/icons/eye.svg" alt="" class="blog__icon">
-							<p class="blog__count">9к</p>
-						</div>
+					<div class="article__img-wrap">
+                    	<img src="img/article.jpg" alt="" class="article__img">
+					</div>
+                    <a href="" class="article__ref">
+                        <h3 class="article__title">На Кипре объявили жесткий локдаун для местных  и туристов</h3>
+                    </a>
+                    <div class="article__wrap">
+                        <p class="article__date">24.04.21</p>
+                        <p class="article__views"><img src="img/icons/eye.svg" alt=""> 9K</p>
+
+                    </div>
+
+                    <a href="#" class="article__cat">Лайфхаки</a>
+                </div>
+                <div class="article__item">
+                    <div class="article__img-wrap">
+                    	<img src="img/article.jpg" alt="" class="article__img">
 					</div>
 
-				</div>
-				<div class="blog__item">
-					<img class="blog__img" src="img/home/blog.png" alt="">
-					<a href="#" class="blog__title">На Кипре объявили жесткий локдаун для местных  и туристов</a>
+                    <a href="" class="article__ref">
+                        <h3 class="article__title">На Кипре объявили жесткий локдаун для местных  и туристов</h3>
+                    </a>
+                    <div class="article__wrap">
+                        <p class="article__date">24.04.21</p>
+                        <p class="article__views"><img src="img/icons/eye.svg" alt=""> 9K</p>
 
-					<div class="blog__row">
-						<p class="blog__date">24.04.21</p>
-						<div class="blog__views">
-							<img src="img/icons/eye.svg" alt="" class="blog__icon">
-							<p class="blog__count">9к</p>
-						</div>
+                    </div>
+
+                    <a href="#" class="article__cat">Лайфхаки</a>
+                </div>
+                <div class="article__item">
+                    <div class="article__img-wrap">
+                    	<img src="img/article.jpg" alt="" class="article__img">
 					</div>
 
-				</div>
-				<div class="blog__item">
-					<img class="blog__img" src="img/home/blog.png" alt="">
-					<a href="#" class="blog__title">На Кипре объявили жесткий локдаун для местных  и туристов</a>
+                    <a href="" class="article__ref">
+                        <h3 class="article__title">На Кипре объявили жесткий локдаун для местных  и туристов</h3>
+                    </a>
+                    <div class="article__wrap">
+                        <p class="article__date">24.04.21</p>
+                        <p class="article__views"><img src="img/icons/eye.svg" alt=""> 9K</p>
 
-					<div class="blog__row">
-						<p class="blog__date">24.04.21</p>
-						<div class="blog__views">
-							<img src="img/icons/eye.svg" alt="" class="blog__icon">
-							<p class="blog__count">9к</p>
-						</div>
+                    </div>
+
+                    <a href="#" class="article__cat">Лайфхаки</a>
+                </div>
+                <div class="article__item">
+                    <div class="article__img-wrap">
+                    	<img src="img/article.jpg" alt="" class="article__img">
 					</div>
 
-				</div>
+                    <a href="" class="article__ref">
+                        <h3 class="article__title">На Кипре объявили жесткий локдаун для местных  и туристов</h3>
+                    </a>
+                    <div class="article__wrap">
+                        <p class="article__date">24.04.21</p>
+                        <p class="article__views"><img src="img/icons/eye.svg" alt=""> 9K</p>
 
-			</div>
+                    </div>
+
+                    <a href="#" class="article__cat">Лайфхаки</a>
+                </div>
+                <div class="article__item">
+                    <div class="article__img-wrap">
+                    	<img src="img/article.jpg" alt="" class="article__img">
+					</div>
+
+                    <a href="" class="article__ref">
+                        <h3 class="article__title">На Кипре объявили жесткий локдаун для местных  и туристов</h3>
+                    </a>
+                    <div class="article__wrap">
+                        <p class="article__date">24.04.21</p>
+                        <p class="article__views"><img src="img/icons/eye.svg" alt=""> 9K</p>
+
+                    </div>
+
+                    <a href="#" class="article__cat">Лайфхаки</a>
+                </div>
+                <div class="article__item">
+                    <div class="article__img-wrap">
+                    	<img src="img/article.jpg" alt="" class="article__img">
+					</div>
+
+                    <a href="" class="article__ref">
+                        <h3 class="article__title">На Кипре объявили жесткий локдаун для местных  и туристов</h3>
+                    </a>
+                    <div class="article__wrap">
+                        <p class="article__date">24.04.21</p>
+                        <p class="article__views"><img src="img/icons/eye.svg" alt=""> 9K</p>
+
+                    </div>
+
+                    <a href="#" class="article__cat">Лайфхаки</a>
+                </div>
+                
+
+
+
+
+            </div>
 
 		</div>
 
@@ -368,7 +456,7 @@
 
 				
 
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -398,7 +486,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -428,7 +516,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -458,7 +546,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -488,7 +576,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -518,7 +606,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -548,7 +636,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -578,7 +666,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -608,7 +696,7 @@
 					<p class="review__text">Запишу видос благодарности. Акул как связаться ? Что записать и куда отправить? Все четко !!!</p>
 
 				</div>
-				<div class="review__item">
+				<div class="review__item wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
 					<div class="review__top">
 						<div class="review__left">
@@ -775,52 +863,28 @@
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 
 <script src="js/vendors.min.js"></script>
-<script>new WOW().init();</script>
+
+
+
 
 <script src="js/app.min.js"></script>
 
 
+<script>
 
-<!-- <script>
-
-// parallax
-    
-    
-window.onload=function(){
-    const parallax = document.querySelector('.parallax');
-    console.log(parallax);
-    if (parallax) {
-        const small = document.querySelector('.block__gold--small');
-        const medium = document.querySelector('.block__gold--medium');
-        const big = document.querySelector('.block__gold--big');
-        const forSmall = 1;
-        const forMedium = 1;
-        const forBig = 1;
-        const speed = 0.05;
-        let positionX = 0, positionY = 0;
-        let coordXprocent = 0, coordYprocent = 0;
-        function setMouseParallaxStyle() {
-            const distX = coordXprocent - positionX;
-            const distY = positionY - coordYprocent;
-            positionX = positionX + (distX * speed);
-            positionY = positionY + (distY * speed);
-            small.style.cssText = `transform: translate(${positionX / forSmall}%,${positionY / forSmall}%);`;
-            medium.style.cssText = `transform: translate(${positionX / forMedium}%,${positionY / forMedium}%);`;
-            big.style.cssText = `transform: translate(${positionX / forBig}%,${positionY / forBig}%);`;
-            requestAnimationFrame(setMouseParallaxStyle);
-        }
-        setMouseParallaxStyle();
-        parallax.addEventListener("mousemove", function (e){
-            const parallaxWidth = parallax.offsetWidth;
-            const parallaxHeight = parallax.offsetHeight;  
-            const coordX = e.pageX - parallaxWidth / 2;
-            const coordY = e.pageY - parallaxHeight / 2;
-            coordXprocent = coordX / parallaxWidth * 100;
-            coordYprocent = coordY / parallaxHeight * 100;
-        });
-    }
+wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
 }
-</script> -->
+)
+wow.init();
+
+
+</script>
 
 
 

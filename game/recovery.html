@@ -12,7 +12,7 @@
 	
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
 	<link rel="stylesheet" href="css/style.min.css">
-	<link rel="shortcut icon" href="favicon.ico">
+
 	<meta name="robots" content="noindex, nofollow">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
 	
@@ -25,11 +25,30 @@
             <nav class="header__nav">
                 <ul class="header__list">
                     <li class="header__item">
-                        <select class="header__select select">
+
+
+                        <!-- <select class="header__select select">
                             
                             <option class="header__option" value="ENG">EUR</option>
                             <option class="header__option" value="RU">RUB</option>
-                        </select>
+                        </select> -->
+
+                        <div class="header__select header__select">
+                            <p>EN</p> 
+                            <img src="img/icons/arrow-down.svg" alt="">
+
+
+                            <div class="header__select-drop">
+                                <a href="#" class="header__select-lang">EN</a>
+                                <a href="#" class="header__select-lang">RU</a>
+
+
+                            </div>
+
+                        </div>
+
+
+
                     </li>
                     <li class="header__item"><a href="#" class="header__link">Купить</a></li>
                     <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
@@ -103,11 +122,19 @@
         
         <div class="header-mobile__wrap">
 
-            <select class="header__select select">
-                        
-                <option class="header__option" value="ENG">EUR</option>
-                <option class="header__option" value="RU">RUB</option>
-            </select>
+            <div class="header__select header__select">
+                <p>EN</p> 
+                <img src="img/icons/arrow-down.svg" alt="">
+
+
+                <div class="header__select-drop">
+                    <a href="#" class="header__select-lang">EN</a>
+                    <a href="#" class="header__select-lang">RU</a>
+
+
+                </div>
+
+            </div>
             
         </div>
     </div> 
@@ -271,52 +298,28 @@
 <!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
 
 <script src="js/vendors.min.js"></script>
-<script>new WOW().init();</script>
+
+
+
 
 <script src="js/app.min.js"></script>
 
 
+<script>
 
-<!-- <script>
-
-// parallax
-    
-    
-window.onload=function(){
-    const parallax = document.querySelector('.parallax');
-    console.log(parallax);
-    if (parallax) {
-        const small = document.querySelector('.block__gold--small');
-        const medium = document.querySelector('.block__gold--medium');
-        const big = document.querySelector('.block__gold--big');
-        const forSmall = 1;
-        const forMedium = 1;
-        const forBig = 1;
-        const speed = 0.05;
-        let positionX = 0, positionY = 0;
-        let coordXprocent = 0, coordYprocent = 0;
-        function setMouseParallaxStyle() {
-            const distX = coordXprocent - positionX;
-            const distY = positionY - coordYprocent;
-            positionX = positionX + (distX * speed);
-            positionY = positionY + (distY * speed);
-            small.style.cssText = `transform: translate(${positionX / forSmall}%,${positionY / forSmall}%);`;
-            medium.style.cssText = `transform: translate(${positionX / forMedium}%,${positionY / forMedium}%);`;
-            big.style.cssText = `transform: translate(${positionX / forBig}%,${positionY / forBig}%);`;
-            requestAnimationFrame(setMouseParallaxStyle);
-        }
-        setMouseParallaxStyle();
-        parallax.addEventListener("mousemove", function (e){
-            const parallaxWidth = parallax.offsetWidth;
-            const parallaxHeight = parallax.offsetHeight;  
-            const coordX = e.pageX - parallaxWidth / 2;
-            const coordY = e.pageY - parallaxHeight / 2;
-            coordXprocent = coordX / parallaxWidth * 100;
-            coordYprocent = coordY / parallaxHeight * 100;
-        });
-    }
+wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
 }
-</script> -->
+)
+wow.init();
+
+
+</script>
 
 
 

@@ -203,6 +203,10 @@ h6 {
 	border: 1px solid $secondary;
 	color: $secondary;
 	display: block;
+
+	&:hover {
+		transform: scale(1.05);
+	}
 	 
 }
 

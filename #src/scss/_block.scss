@@ -80,6 +80,9 @@
         display: flex;
         align-items: center;
         justify-content: center;
+        &:hover {
+            transform: scale(1.05);
+        }
         
     }
 
@@ -138,12 +141,26 @@
             height: auto;
             
         }
+
+        &:hover {
+
+            .block__icon {
+                
+                transform: scale(1.1);
+            }
+        }
     }
 
     // .block__icon
 
     &__icon {
-        margin-bottom: 30px;
+        transition: all 3s linear;
+        --animate-duration: 2s;
+        --animate-delay: 3s;
+        
+
+
+
         @media screen and (max-width: 480px) {
             
             height: 26px;

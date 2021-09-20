@@ -38,6 +38,13 @@ $('.delivery-popup__closer, .delivery-popup__close').click(function(e){
     $('.delivery-popup').removeClass('delivery-popup--active')
 })
 
+$('.header__select').click(function(e){
+    e.preventDefault();
+
+    $(this).toggleClass('header__select--active')
+    $('.header__select-drop').toggleClass('header__select-drop--active')
+
+})
 
 
 function myFunction() {
