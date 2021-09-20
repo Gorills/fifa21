@@ -67,10 +67,18 @@ let onChange = function(){
 
 }
 
-document.getElementById('range').addEventListener('input', function(){		
-	onChange();
-});	
-onChange();
+
+const range = document.getElementById('range');
+if (range) {
+    document.getElementById('range').addEventListener('input', function(){		
+        onChange();
+    });	
+    onChange();
+}
+
+
+
+
 
 
 document.addEventListener("mousemove", parallax);
