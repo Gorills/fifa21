@@ -23,7 +23,7 @@
         }
         &--blue {
             border-color: #1882ff;
-            &:hover { 
+            &:hover, &:focus { 
                 background-color: #1882ff;
                
                 
@@ -31,19 +31,19 @@
         }
         &--green {
             border-color: #18ff59;
-            &:hover { 
+            &:hover, &:focus { 
                 background-color: #18ff59;
                 
             }
         }
         &--orange {
             border-color: #ff792e;
-            &:hover { 
+            &:hover, &:focus { 
                 background-color: #ff792e;
                 
             }
         }
-        &:hover{
+        &:hover, &:focus{
             color: #13131d;
             svg {
                 path{

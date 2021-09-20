@@ -136,7 +136,7 @@
         @media screen and (max-width: 768px) {
             margin: 0 auto 20px;
         }
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
             width: 168px;
             height: auto;
             
@@ -161,7 +161,7 @@
 
 
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
             
             height: 26px;
             margin-bottom: 10px;
@@ -174,7 +174,7 @@
         font-size: 18px;
         margin-bottom: 12px;
 
-        @media screen and (max-width: 480px) {
+        @media screen and (max-width: 576px) {
             
             font-size: 14px;
         }
@@ -224,12 +224,19 @@
         opacity: 0.7;
         filter: blur(300px);
         z-index: 1;
+        @media screen and (max-width: 480px) {
+            display: none;
+             
+         }
+
     }
     // .block__player
 
     &__player {
         position: relative;
         z-index: 2;
+        --animate-duration: 2s;
+        --animate-delay: 3s;
         -webkit-mask-image: -webkit-gradient(linear,left bottom,left top,from(transparent),to(#000));
         @media screen and (max-width: 480px) {
            width: 369px;

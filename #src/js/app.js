@@ -102,3 +102,21 @@ function parallax(e){
 }
 
 
+
+
+
+
+
+ var $radioButtons = $('.custom-radio');
+ $radioButtons.click(function() {
+     $radioButtons.each(function() {
+         $(this).parent().parent().toggleClass('active', this.checked);
+     });
+ });
+ 
+
+ $()
+
+
+    
+ 

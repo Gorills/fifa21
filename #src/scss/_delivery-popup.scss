@@ -63,6 +63,7 @@
         width: 100%;
         font-size: 14px;
         font-weight: 500;
+        border-collapse: collapse; 
 
         th {
             color: #9E9EE0;
@@ -86,7 +87,12 @@
             text-align: center;
         }
 
+        .active {
+          border: 1px solid #e51bef;
+        }
+
     }
+    
 
     // .delivery-popup__search
 

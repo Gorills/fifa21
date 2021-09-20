@@ -130,6 +130,9 @@ label {
 button {
 	cursor: pointer;
     transition: $transition;
+	&:hover {
+		transform: scale(1.05);
+	}
 }
 button::-moz-focus-inner {
 	padding: 0;

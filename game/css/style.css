@@ -176,6 +176,12 @@ button {
   transition: all 0.5s ease;
 }
 
+button:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 button::-moz-focus-inner {
   padding: 0;
   border: 0;
@@ -1093,6 +1099,8 @@ h6 {
 .block__player {
   position: relative;
   z-index: 2;
+  --animate-duration: 2s;
+  --animate-delay: 3s;
   -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#000));
 }
 
@@ -1891,6 +1899,15 @@ h6 {
   width: 100%;
   margin: 0 auto;
   margin: 71px 0;
+  /* Applies to all tooltips */
+  /* Make the tooltips respond to hover */
+  /* don't show empty tooltips */
+  /* FLOW: UP */
+  /* FLOW: DOWN */
+  /* FLOW: LEFT */
+  /* FLOW: RIGHT */
+  /* KEYFRAMES */
+  /* FX All The Things */
 }
 
 .progress__top {
@@ -2043,6 +2060,199 @@ h6 {
 
 .progress__ball--active {
   color: #fff;
+}
+
+.progress [tooltip] {
+  position: absolute;
+  /* opinion 1 */
+}
+
+.progress [tooltip]::before,
+.progress [tooltip]::after {
+  text-transform: none;
+  /* opinion 2 */
+  font-size: 0.9em;
+  /* opinion 3 */
+  line-height: 1;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  pointer-events: none;
+  position: absolute;
+  display: none;
+  opacity: 0;
+}
+
+.progress [tooltip]::before {
+  content: "";
+  border: 5px solid transparent;
+  /* opinion 4 */
+  z-index: 1001;
+  /* absurdity 1 */
+}
+
+.progress [tooltip]::after {
+  content: attr(tooltip);
+  /* magic! */
+  /* most of the rest of this is opinion */
+  font-family: Helvetica, sans-serif;
+  text-align: center;
+  /* 
+    Let the content set the size of the tooltips 
+    but this will also keep them from being obnoxious
+    */
+  min-width: 3em;
+  max-width: 21em;
+  white-space: nowrap;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  padding: 1ch 1.5ch;
+  border-radius: 0.3ch;
+  -webkit-box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+          box-shadow: 0 1em 2em -0.5em rgba(0, 0, 0, 0.35);
+  background: #e51bef;
+  font-weight: 700;
+  color: #fff;
+  z-index: 1000;
+  /* absurdity 2 */
+}
+
+.progress [tooltip]:hover::before,
+.progress [tooltip]:hover::after {
+  display: block;
+}
+
+.progress [tooltip=""]::before,
+.progress [tooltip=""]::after {
+  display: none !important;
+}
+
+.progress [tooltip]:not([flow])::before,
+.progress [tooltip][flow^=up]::before {
+  bottom: 100%;
+  border-bottom-width: 0;
+  border-top-color: #e51bef;
+}
+
+.progress [tooltip]:not([flow])::after,
+.progress [tooltip][flow^=up]::after {
+  bottom: calc(100% + 5px);
+}
+
+.progress [tooltip]:not([flow])::before,
+.progress [tooltip]:not([flow])::after,
+.progress [tooltip][flow^=up]::before,
+.progress [tooltip][flow^=up]::after {
+  left: 30%;
+  -webkit-transform: translate(-50%, -0.5em);
+      -ms-transform: translate(-50%, -0.5em);
+          transform: translate(-50%, -0.5em);
+}
+
+.progress [tooltip][flow^=down]::before {
+  top: 100%;
+  border-top-width: 0;
+  border-bottom-color: #e51bef;
+}
+
+.progress [tooltip][flow^=down]::after {
+  top: calc(100% + 5px);
+}
+
+.progress [tooltip][flow^=down]::before,
+.progress [tooltip][flow^=down]::after {
+  left: 30%;
+  -webkit-transform: translate(-50%, 0.5em);
+      -ms-transform: translate(-50%, 0.5em);
+          transform: translate(-50%, 0.5em);
+}
+
+.progress [tooltip][flow^=left]::before {
+  top: 50%;
+  border-right-width: 0;
+  border-left-color: #e51bef;
+  left: calc(0em - 5px);
+  -webkit-transform: translate(-0.5em, -50%);
+      -ms-transform: translate(-0.5em, -50%);
+          transform: translate(-0.5em, -50%);
+}
+
+.progress [tooltip][flow^=left]::after {
+  top: 50%;
+  right: calc(100% + 5px);
+  -webkit-transform: translate(-0.5em, -50%);
+      -ms-transform: translate(-0.5em, -50%);
+          transform: translate(-0.5em, -50%);
+}
+
+.progress [tooltip][flow^=right]::before {
+  top: 50%;
+  border-left-width: 0;
+  border-right-color: #e51bef;
+  right: calc(0em - 5px);
+  -webkit-transform: translate(0.5em, -50%);
+      -ms-transform: translate(0.5em, -50%);
+          transform: translate(0.5em, -50%);
+}
+
+.progress [tooltip][flow^=right]::after {
+  top: 50%;
+  left: calc(100% + 5px);
+  -webkit-transform: translate(0.5em, -50%);
+      -ms-transform: translate(0.5em, -50%);
+          transform: translate(0.5em, -50%);
+}
+
+@-webkit-keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@keyframes tooltips-vert {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+  }
+}
+
+@-webkit-keyframes tooltips-horz {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+@keyframes tooltips-horz {
+  to {
+    opacity: 0.9;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+  }
+}
+
+.progress [tooltip]:not([flow]):hover::before,
+.progress [tooltip]:not([flow]):hover::after,
+.progress [tooltip][flow^=up]:hover::before,
+.progress [tooltip][flow^=up]:hover::after,
+.progress [tooltip][flow^=down]:hover::before,
+.progress [tooltip][flow^=down]:hover::after {
+  -webkit-animation: tooltips-vert 300ms ease-out forwards;
+          animation: tooltips-vert 300ms ease-out forwards;
+}
+
+.progress [tooltip][flow^=left]:hover::before,
+.progress [tooltip][flow^=left]:hover::after,
+.progress [tooltip][flow^=right]:hover::before,
+.progress [tooltip][flow^=right]:hover::after {
+  -webkit-animation: tooltips-horz 300ms ease-out forwards;
+          animation: tooltips-horz 300ms ease-out forwards;
 }
 
 .refer {
@@ -2349,7 +2559,8 @@ h6 {
   border-color: #1882ff;
 }
 
-.choice__item--blue:hover {
+.choice__item--blue:hover,
+.choice__item--blue:focus {
   background-color: #1882ff;
 }
 
@@ -2357,7 +2568,8 @@ h6 {
   border-color: #18ff59;
 }
 
-.choice__item--green:hover {
+.choice__item--green:hover,
+.choice__item--green:focus {
   background-color: #18ff59;
 }
 
@@ -2365,15 +2577,18 @@ h6 {
   border-color: #ff792e;
 }
 
-.choice__item--orange:hover {
+.choice__item--orange:hover,
+.choice__item--orange:focus {
   background-color: #ff792e;
 }
 
-.choice__item:hover {
+.choice__item:hover,
+.choice__item:focus {
   color: #13131d;
 }
 
-.choice__item:hover svg path {
+.choice__item:hover svg path,
+.choice__item:focus svg path {
   fill: #13131d;
 }
 
@@ -2529,6 +2744,12 @@ h6 {
   padding: 20px;
   font-size: 16px;
   font-weight: 600;
+}
+
+.coins__btn:hover {
+  -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+          transform: scale(1.05);
 }
 
 .pay {
@@ -2965,6 +3186,10 @@ h6 {
           transform: scale(1.1);
 }
 
+.article__item:hover .article__title {
+  text-decoration: underline;
+}
+
 .article__img-wrap {
   width: 100%;
   height: 200px;
@@ -2987,6 +3212,11 @@ h6 {
   margin-bottom: 24px;
   display: block;
   color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.article__title {
   font-size: 20px;
   font-weight: 600;
 }
@@ -3528,6 +3758,7 @@ h6 {
 
 .delivery__item-new-left {
   width: 83px;
+  min-width: 83px;
   margin-right: 37px;
   height: 386px;
   position: relative;
@@ -3748,6 +3979,7 @@ h6 {
   width: 100%;
   font-size: 14px;
   font-weight: 500;
+  border-collapse: collapse;
 }
 
 .delivery-popup__table th {
@@ -3777,6 +4009,10 @@ h6 {
 .delivery-popup__table td {
   padding: 13px;
   text-align: center;
+}
+
+.delivery-popup__table .active {
+  border: 1px solid #e51bef;
 }
 
 .delivery-popup__search {
@@ -4243,11 +4479,47 @@ h6 {
   .pay__way {
     margin-bottom: 16px;
   }
+
+  .popup {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .popup__inner {
+    min-height: 100%;
+  }
+
+  .popup__wrapper {
+    max-width: 100%;
+  }
+
+  .popup__player {
+    display: none;
+  }
+
+  .popup__circle {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
   .title__wrapper a {
     display: none;
+  }
+
+  .block__item {
+    width: 168px;
+    height: auto;
+  }
+
+  .block__icon {
+    height: 26px;
+    margin-bottom: 10px;
+  }
+
+  .block__grid-title {
+    font-size: 14px;
   }
 }
 
@@ -4278,26 +4550,16 @@ h6 {
     margin-top: 20px;
   }
 
-  .block__item {
-    width: 168px;
-    height: auto;
-  }
-
-  .block__icon {
-    height: 26px;
-    margin-bottom: 10px;
-  }
-
-  .block__grid-title {
-    font-size: 14px;
-  }
-
   .block__grid-text {
     font-size: 8px;
   }
 
   .block__wrapper {
     top: 44%;
+  }
+
+  .block__ellipse {
+    display: none;
   }
 
   .block__player {
@@ -4312,6 +4574,10 @@ h6 {
     display: none;
   }
 
+  .table__cancell {
+    right: 20px;
+  }
+
   .profile__personal {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -4322,6 +4588,11 @@ h6 {
   .profile__column + .profile__column {
     margin-left: 0;
     margin-top: 40px;
+  }
+
+  .popup .tabs > label {
+    margin-right: 10px;
+    font-size: 14px;
   }
 
   .delivery__item-new {
@@ -4338,5 +4609,11 @@ h6 {
 
   .delivery__item-new-left {
     display: none;
+  }
+}
+
+@media screen and (max-height: 560px) {
+  .popup__inner {
+    overflow-y: scroll;
   }
 }
