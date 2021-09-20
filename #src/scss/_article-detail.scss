@@ -1,0 +1,140 @@
+.article-detail {
+    width: 100%;
+    margin: 0 auto;
+    padding: 60px;
+    font-size: 18px;
+    // .article-detail__inner
+
+    &__inner {
+        width: 100%;
+        max-width: 660px;
+        margin: 0 auto;
+    }
+
+    // .article-detail__wrap
+
+    &__wrap {
+        width: 100%;
+        position: relative;
+        margin-bottom: 40px;
+        overflow: hidden;
+        height: 280px;
+    }
+
+    // .article-detail__img
+
+    &__img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    // .article-detail__date
+
+    &__date {
+        font-size: 18px;
+        font-weight: 500;
+        opacity: 50%;
+        margin-bottom: 16px;
+    }
+
+    // .article-detail__title
+
+    &__title {
+        font-size: 36px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+
+    // .article-detail__subtitle
+
+    &__subtitle {
+        font-weight: 300;
+        margin-bottom: 56px;
+    }
+
+    // .article-detail__article
+
+    &__article {
+        h2 {
+            margin-bottom: 32px;
+            font-size: 28px;
+            font-weight: 600;
+        }
+        p {
+            margin-bottom: 50px;
+        }
+        table {
+            margin-bottom: 80px;
+            width: 100%;
+            tr:nth-child(odd) {
+                background-color: #171727;
+            }
+            tr:nth-child(1) {
+                background-color: #E51BEF;
+                font-weight: 600;
+                th {
+                    padding: 12px;
+                }
+                
+            }
+            td {
+                padding: 46px 12px;
+                
+                &:nth-child(1) {
+                    text-align: center;
+                }
+                &:nth-child(2) {
+                    text-align: center;
+                }
+            }
+            p {
+                margin-bottom: 0;
+            }
+            
+        }
+
+        img {
+            margin-bottom: 48px;
+            width: 100%;
+        }
+
+        blockquote {
+            margin-bottom: 100px;
+            padding-left: 25px;
+            position: relative;
+            &::after {
+                content: "";
+                position: absolute;
+                left: 0;
+                top: 0;
+                background-color: #E51BEF;
+                width: 3px;
+                height: 100%;
+            }
+        }
+
+
+        ol {
+            counter-reset: li;
+            padding-left: 20px;
+
+            li {
+                display: block;
+                margin-bottom: 40px;
+                
+            }
+            li::before {
+                content: counter(li); 
+                color:#E51BEF;
+                display: inline-block; 
+                width: 1em;
+                margin-left: -1em;
+                font-weight: 700;
+            }
+            li {counter-increment: li}
+        }
+
+    }
+}
+

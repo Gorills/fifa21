@@ -1,0 +1,42 @@
+.status {
+    font-size: 10px;
+    font-weight: 600;
+    padding: 7px 10px;
+    border-radius: 2px;
+    display: inline-block;
+
+    // .status__canceled
+
+    &__canceled {
+        background-color: #ff4b55;
+        color: #13131d;
+    }
+
+    // .status__nobalance
+
+    &__nobalance {
+        color: #9e9ee0;
+        background-color: #13131d;
+    }
+
+    // .status__done
+
+    &__done {
+        color: #13131d;
+        background-color: #43FFA5;
+    }
+
+    // .status__work
+
+    &__work {
+        color: #13131d;
+        background-color: #FFE603;
+    }
+
+    // .status__nopay
+
+    &__nopay {
+        color: #9e9ee0;
+        background-color: #13131d;
+    }
+}

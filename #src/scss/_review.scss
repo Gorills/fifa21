@@ -1,0 +1,127 @@
+.review {
+    width: 100%;
+    padding: 60px 0;
+    margin: 0 auto;
+
+   
+
+    // .review__inner
+
+    &__inner {
+        width: 100%;
+        
+        margin: 0 auto;
+    }
+
+    // .review__row
+
+    &__row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    // .review__item
+
+    &__item {
+        width: 380px;
+        margin-bottom: 20px;
+        background-color: #171727;
+        padding: 25px;
+        @media screen and(max-width: 768px) {
+            margin: 0 auto 20px;
+        }
+
+    }
+
+    // .review__top
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 40px;
+    }
+
+    // .review__left
+
+    &__left {
+        display: flex;
+        align-items: center;
+    }
+
+    // .review__wrap
+
+    &__wrap {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        background-color: #372967;
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+        margin-right: 15px;
+    }
+
+    // .review__ab
+
+    &__ab {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 600;
+    }
+
+    // .review__flag
+
+    &__flag {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+    }
+
+    // .review__col
+
+    &__col {
+    }
+
+    // .review__name
+
+    &__name {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 5px;
+    }
+
+    // .review__date
+
+    &__date {
+        font-size: 10px;
+    }
+
+    // .review__right
+
+    &__right {
+    }
+
+    // .review__text
+
+    &__text {
+        font-size: 16px;
+    }
+    // .review__bottom
+
+    &__bottom {
+        text-align: center;
+        margin-top: 50px;
+        @media screen and(max-width: 480px) {
+            display: none;
+        }
+    }
+    // .review__link
+    &__link {
+        font-size: 20px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 50%;
+    }
+}

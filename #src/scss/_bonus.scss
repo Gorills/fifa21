@@ -1,0 +1,132 @@
+.bonus {
+    width: 100%;
+    margin-bottom: 88px;
+    margin: 0 auto;
+    // .bonus__top
+
+    &__top {
+        padding: 20px 60px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: relative;
+        background-color: #171727;
+        margin-bottom: 65px;
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            padding: 20px;
+            overflow: hidden;
+        }
+    }
+
+    // .bonus__col
+
+    &__col {
+        width: 50%;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: relative;
+        z-index: 2;
+        @media screen and (max-width: 768px) {
+            height: fit-content;
+            width: 100%;
+        }
+    }
+
+    &__col + &__col {
+        padding-left: 60px;
+        border-left: 1px solid #9E9EE0;
+        @media screen and (max-width: 768px) {
+            padding-left: 0;
+            margin-top: 34px;
+            padding-top: 34px;
+            border-left: none;
+            border-top: 1px solid #9E9EE0;
+        }
+    }
+
+    // .bonus__status
+
+    &__status {
+        font-size: 24px;
+        @media screen and (max-width: 768px) {
+            font-size: 18px;
+        }
+    }
+
+    // .bonus__status-bold
+
+    &__status-bold {
+        font-weight: 600;
+    }
+
+    // .bonus__status-primary
+
+    &__status-primary {
+        color: $primary;
+    }
+
+    // .bonus__wrap
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__wrap+&__wrap{
+        margin-top: 22px;
+    }
+
+    // .bonus__top-status
+
+    &__top-status {
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        opacity: 50%;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+
+    // .bonus__ball
+
+    &__ball {
+        font-size: 16px;
+        font-weight: 600;
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+    }
+
+    // .bonus__bitcoin
+
+    &__bitcoin {
+        position: absolute;
+        right: -20px;
+        top: -11px;
+        opacity: 20%;
+        z-index: 1;
+        @media screen and (max-width: 768px) {
+            top: 50%;
+            transform: translateY(-50%);
+            right: -36px;
+        }
+    }
+    // .bonus__bottom-text
+
+    &__bottom-text {
+        margin-bottom: 88px;
+        font-size: 16px;
+        text-align: center;
+        padding: 11px;
+        display: block;
+        background-color: #171727;
+
+        @media screen and (max-width: 768px) {
+            font-size: 12px;
+        }
+
+    }
+}

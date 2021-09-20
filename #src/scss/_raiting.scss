@@ -1,0 +1,59 @@
+
+.catalog-product__rating i{
+  background-image:url(../img/raiting/star-full.svg);
+  background-position:center;
+  background-repeat:no-repeat;
+  background-size:contain;
+  display:inline-block;
+  height:20px;
+  margin-right:4px;
+  width:12px
+}
+.catalog-product__rating[data-rating="0"] i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="1"] i:nth-child(1) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="2"] i:nth-child(2) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="3"] i:nth-child(3) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="4"] i:nth-child(4) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="5"] i:nth-child(5) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating=".5"] i:nth-child(1){
+  background-image:url(../img/raiting/star-half.svg)
+}
+.catalog-product__rating[data-rating=".5"] i:nth-child(1) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="1.5"] i:nth-child(2){
+  background-image:url(../img/raiting/star-half.svg)
+}
+.catalog-product__rating[data-rating="1.5"] i:nth-child(2) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="2.5"] i:nth-child(3){
+  background-image:url(../img/raiting/star-half.svg)
+}
+.catalog-product__rating[data-rating="2.5"] i:nth-child(3) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="3.5"] i:nth-child(4){
+  background-image:url(../img/raiting/star-half.svg)
+}
+.catalog-product__rating[data-rating="3.5"] i:nth-child(4) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}
+.catalog-product__rating[data-rating="4.5"] i:nth-child(5){
+  background-image:url(../img/raiting/star-half.svg)
+}
+.catalog-product__rating[data-rating="4.5"] i:nth-child(5) ~ i{
+  background-image:url(../img/raiting/star-empty.svg)
+}

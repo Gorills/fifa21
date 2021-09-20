@@ -1,0 +1,29 @@
+
+.regulations {
+    width: 100%;
+    margin: 0 auto;
+    padding: 92px 0;
+		// .regulations__inner
+
+		&__inner {
+            width: 100%;
+            max-width: 962px;
+            margin: 0 auto;
+		}
+
+		// .regulations__title
+
+		&__title {
+            text-align: center;
+            margin-bottom: 32px;
+            font-weight: 600;
+            font-size: 24px;
+		}
+
+		// .regulations__text
+
+		&__text {
+            opacity: 75%;
+            margin-bottom: 20px;
+		}
+}

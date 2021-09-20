@@ -1,0 +1,51 @@
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+<script src="js/vendors.min.js"></script>
+<script>new WOW().init();</script>
+
+<script src="js/app.min.js"></script>
+
+
+
+<!-- <script>
+
+// parallax
+    
+    
+window.onload=function(){
+    const parallax = document.querySelector('.parallax');
+    console.log(parallax);
+    if (parallax) {
+        const small = document.querySelector('.block__gold--small');
+        const medium = document.querySelector('.block__gold--medium');
+        const big = document.querySelector('.block__gold--big');
+        const forSmall = 1;
+        const forMedium = 1;
+        const forBig = 1;
+        const speed = 0.05;
+        let positionX = 0, positionY = 0;
+        let coordXprocent = 0, coordYprocent = 0;
+        function setMouseParallaxStyle() {
+            const distX = coordXprocent - positionX;
+            const distY = positionY - coordYprocent;
+            positionX = positionX + (distX * speed);
+            positionY = positionY + (distY * speed);
+            small.style.cssText = `transform: translate(${positionX / forSmall}%,${positionY / forSmall}%);`;
+            medium.style.cssText = `transform: translate(${positionX / forMedium}%,${positionY / forMedium}%);`;
+            big.style.cssText = `transform: translate(${positionX / forBig}%,${positionY / forBig}%);`;
+            requestAnimationFrame(setMouseParallaxStyle);
+        }
+        setMouseParallaxStyle();
+        parallax.addEventListener("mousemove", function (e){
+            const parallaxWidth = parallax.offsetWidth;
+            const parallaxHeight = parallax.offsetHeight;  
+            const coordX = e.pageX - parallaxWidth / 2;
+            const coordY = e.pageY - parallaxHeight / 2;
+            coordXprocent = coordX / parallaxWidth * 100;
+            coordYprocent = coordY / parallaxHeight * 100;
+        });
+    }
+}
+</script> -->

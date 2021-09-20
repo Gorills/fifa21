@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Оставить отзыв"
+	})
+	<body>
+		
+@@include('_header.html',{})
+
+
+<div class="balance">
+    <div class="container-min">
+        <div class="balance__inner">
+            <p class="balance__text text-center">Спасибо, что выбрали нас, оставьте о нас отзыв</span></p>
+
+        </div>
+    </div>
+    <img src="img/balance.png" alt="" class="balance__bg">
+</div>
+
+
+<div class="feedback">
+    <div class="container-feedback">
+        <div class="feedback__inner">
+
+            <form action="" class="feedback__form">
+                <div class="rating-area">
+                    <input type="radio" id="star-5" name="rating" value="5">
+                    <label for="star-5" title="Оценка «5»"></label>	
+                    <input type="radio" id="star-4" name="rating" value="4">
+                    <label for="star-4" title="Оценка «4»"></label>    
+                    <input type="radio" id="star-3" name="rating" value="3">
+                    <label for="star-3" title="Оценка «3»"></label>  
+                    <input type="radio" id="star-2" name="rating" value="2">
+                    <label for="star-2" title="Оценка «2»"></label>    
+                    <input type="radio" id="star-1" name="rating" value="1">
+                    <label for="star-1" title="Оценка «1»"></label>
+                </div>
+
+                <label for="" class="feedback__label">Сообщение</label>
+                <textarea name="" id="" cols="30" rows="10" class="feedback__textarea" placeholder="Ваше сообщение"></textarea>
+                <button type="submit" class="feedback__btn btn-gradient">Отправить</button>
+                
+
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+@@include('_footer.html',{})
+
+
+
+@@include('_popup.html',{})
+
+
+@@include('_js.html',{})
+
+
+
+	</body>
+</html>

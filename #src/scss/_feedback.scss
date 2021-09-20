@@ -1,0 +1,105 @@
+
+.feedback {
+    width: 100%;
+    margin: 0 auto;
+    padding: 102px 0 681px 0;
+    .container-feedback {
+        width: 100%;
+        max-width: 629px;
+        margin: 0 auto;
+        padding: 0 15px;
+    }
+		// .feedback__inner
+
+		&__inner {
+            width: 100%;
+            margin: 0 auto;
+		}
+
+		// .feedback__dorm
+
+		&__form {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            
+            
+		}
+        // .feedback__label
+        &__label {
+            margin-left: 8px;
+            margin-bottom: 5px;
+            font-size: 12px;
+            font-weight: 600;
+            color: #9e9ee0;
+            display: block;
+            margin-top: 56px;
+        }
+		// .feedback__textarea
+
+		&__textarea {
+            
+            width: 100%;
+            max-width: 599px;
+            height: 96px;
+            
+	        margin-bottom: 32px;
+            
+		}
+
+		// .feedback__btn
+
+		&__btn {
+            width: 100%;
+            height: 48px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            cursor: pointer;
+            
+		}
+
+        .rating-area {
+            overflow: hidden;
+           
+            margin: 0 auto;
+        }
+        .rating-area:not(:checked) > input {
+            display: none;
+        }
+        .rating-area:not(:checked) > label {
+            float: right;
+            width: 42px;
+            padding: 0;
+            cursor: pointer;
+            font-size: 32px;
+            line-height: 32px;
+            color: lightgrey;
+            text-shadow: 1px 1px #bbb;
+        }
+        .rating-area:not(:checked) > label:before {
+            content: url(../img/raiting/star-big-empty.svg);
+        }
+        .rating-area > input:checked ~ label:before {
+            content: url(../img/raiting/star-big.svg);
+        }
+        .rating-area:not(:checked) > label:hover,
+        .rating-area:not(:checked) > label:hover ~ label {
+            color: gold;
+        }
+        .rating-area > input:checked + label:hover,
+        .rating-area > input:checked + label:hover ~ label,
+        .rating-area > input:checked ~ label:hover,
+        .rating-area > input:checked ~ label:hover ~ label,
+        .rating-area > label:hover ~ input:checked ~ label {
+            color: gold;
+            text-shadow: 1px 1px goldenrod;
+        }
+        .rate-area > label:active {
+            position: relative;
+        }
+}
+

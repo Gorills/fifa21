@@ -1,0 +1,189 @@
+.delivery-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    justify-content: center;
+    align-items: center;
+    z-index: 998;
+    display: none;
+    &--active {
+        display: flex;
+    }
+    // .delivery-popup__closer
+
+    &__closer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #000;
+        opacity: .5;
+        z-index: 999;
+        cursor: pointer;
+
+    }
+
+    // .delivery-popup__inner
+
+    &__inner {
+        width: 100%;
+        max-width: 1080px;
+        padding: 50px 60px;
+        position: relative;
+        z-index: 1000;
+        background-color: #171727;
+        height: auto;
+        min-height: 823px;
+    }
+
+    // .delivery-popup__close
+
+    &__close {
+        position: absolute;
+        right: 48px;
+        top: 48px;
+        cursor: pointer;
+    }
+
+    // .delivery-popup__title
+
+    &__title {
+        font-size: 24px;
+        font-weight: 600;
+        margin-bottom: 54px;
+    }
+
+    // .delivery-popup__table
+
+    &__table {
+        width: 100%;
+        font-size: 14px;
+        font-weight: 500;
+
+        th {
+            color: #9E9EE0;
+            font-size: 12px;
+            padding: 20px;
+        }
+
+        tr:nth-child(even) {
+            background-color: #13131D;
+        }
+        td:nth-child(2) {
+            display: flex;
+            align-items: center;
+            white-space: nowrap;
+            img {
+                margin-right: 13px;
+            }
+        }
+        td {
+            padding: 13px;
+            text-align: center;
+        }
+
+    }
+
+    // .delivery-popup__search
+
+    &__search {
+        width: 100%;
+        padding: 22px 121px;
+        background-color: #13131D;
+        display: flex;
+        align-items: center;
+
+        
+
+        
+    }
+    // .delivery-popup__search-icon
+    &__search-icon {
+        
+        transition: all 0.5s ease;
+        animation: rotate 1s linear infinite;
+    }
+    @keyframes rotate {
+        from {
+          transform: rotate(-360deg);
+        }
+      }
+
+    // .delivery-popup__search-text
+    &__search-text {
+        font-size: 14px;
+        font-weight: 500;
+        margin-left: 19px;
+
+    }
+    /* для элемента input c type="radio" */
+  .custom-radio {
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+  }
+  /* для элемента label связанного с .custom-radio */
+  .custom-radio+label {
+    display: inline-flex;
+    align-items: center;
+    user-select: none;
+  }
+  /* создание в label псевдоэлемента  before со следующими стилями */
+  .custom-radio+label::before {
+    content: '';
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    flex-grow: 0;
+    border: 1px solid #adb5bd;
+    border-radius: 50%;
+    margin-right: 0.5em;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 50% 50%;
+  }
+  /* стили при наведении курсора на радио */
+  .custom-radio:not(:disabled):not(:checked)+label:hover::before {
+    border-color: #E51BEF;
+  }
+  /* стили для активной радиокнопки (при нажатии на неё) */
+  .custom-radio:not(:disabled):active+label::before {
+    background-color: #E51BEF;
+    border-color: #E51BEF;
+  }
+  /* стили для радиокнопки, находящейся в фокусе */
+  .custom-radio:focus+label::before {
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  /* стили для радиокнопки, находящейся в фокусе и не находящейся в состоянии checked */
+  .custom-radio:focus:not(:checked)+label::before {
+    border-color: #E51BEF;
+  }
+  /* стили для радиокнопки, находящейся в состоянии checked */
+  .custom-radio:checked+label::before {
+    border-color: #E51BEF;
+    
+    background-image: url("../img/icons/ellipse.svg");
+
+   
+  }
+  /* стили для радиокнопки, находящейся в состоянии disabled */
+  .custom-radio:disabled+label::before {
+    background-color: #e9ecef;
+  }
+
+  .wrap {
+      text-align: center;
+  }
+  .coins__btn {
+      cursor: pointer;
+      max-width: 360px;
+      margin: 42px auto 0;
+  }
+
+}

@@ -1,0 +1,124 @@
+
+.article {
+    padding: 40px 119px;
+    width: 100%;
+    margin: 0 auto;
+    // .article__inner
+
+    &__inner {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    // .article__nav
+
+    &__nav {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 64px;
+    }
+
+    // .article__link
+
+    &__link {
+        color: #fff;
+        padding: 10px 28px;
+        border: 1px solid #9e9ee0;
+        border-radius: 100px;
+        font-size: 600px;
+        font-size: 16px;
+
+        // .article__link--active
+
+        &--active {
+            border-color: transparent;
+            background: rgb(231,8,115);
+            background: linear-gradient(90deg, rgba(231,8,115,1) 0%, rgba(249,76,159,1) 100%);
+            
+        }
+    }
+    &__link + &__link {
+        margin-left: 24px;
+    }
+
+    // .article__row
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    // .article__item
+
+    &__item {
+        width: 100%;
+        max-width: 380px;
+        margin-bottom: 56px;
+        position: relative;
+    }
+
+    // .article__img
+
+    &__img {
+        width: 380px;
+        height: 200px;
+        object-fit: cover;
+        overflow: hidden;
+        margin-bottom: 24px;
+    }
+    // .article__ref
+
+    &__ref {
+        margin-bottom: 24px;
+        display: block;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+
+    }
+    // .article__title
+
+    &__title {
+    }
+
+    // .article__wrap
+
+    &__wrap {
+        display: flex;
+        color: #fff;
+        opacity: 50%;
+        font-size: 11px;
+        align-items: center;
+    }
+
+    // .article__date
+
+    &__date {
+        margin-right: 16px;
+    }
+
+    // .article__views
+
+    &__views {
+        display: flex;
+        align-items: center;
+        img {
+            margin-right: 8px;
+        }
+    }
+    // .article__cat
+
+    &__cat {
+        position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+        background-color: #e51bef;
+        font-size: 11px;
+        border-radius: 100px;
+        padding: 8px 18px;
+        font-weight: 500;
+    }
+}

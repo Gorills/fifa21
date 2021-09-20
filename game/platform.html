@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Бонусная система</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://kit.fontawesome.com/0af96d350a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		
+<header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+                        <select class="header__select select">
+                            
+                            <option class="header__option" value="ENG">EUR</option>
+                            <option class="header__option" value="RU">RUB</option>
+                        </select>
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Купить</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
+                    <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Статьи</a></li>
+                </ul>
+
+            </nav>
+
+            <a href="#" class="header__logo-wrap">
+                <img src="img/logo.png" alt="" class="header__logo">
+            </a>
+            
+            <div class="header__wrap">
+
+
+                <div class="header__col-balance">
+                    <div class="header__balance">
+                        <img src="img/icons/pay.png" alt="">
+                        <p class="header__text">1000 баллов</p>
+                        <img class="header__col-balance-arrow" src="img/icons/top-arrow.png" alt="">
+                    </div>
+                    <ul class="header__balance-dropdown">
+                        <li><p class="header__balance-drop">Баланс:</p><p class="header__balance-drop">1000 баллов</p></li>
+                        <li><a href="#">История покупок</a></li>
+                        <li><a href="#">Бонусная система</a></li>
+                        <li><a href="#">Реферальная программа</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="header__col-balance">
+                    <div class="header__profile">
+                        <img src="img/icons/user.png" alt="">
+                        <p class="header__text">Егор Гайнцев</p>
+                        <img class="header__col-balance-arrow" src="img/icons/top-arrow.png" alt="">
+                        
+                    </div>
+                    <ul class="header__balance-dropdown">
+                        <li><p class="header__balance-drop">Егор Гайнцев</p></li>
+                        <li><a href="#">Профиль</a></li>
+                        <li class="warning"><a href="#">Выход</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div> 
+</header>
+
+<header class="header-mobile">
+    <div class="header-mobile__inner">
+        
+        <div class="header-mobile__toggle">
+
+            <div class="toggle-menu" id="menu">
+                <div class="toggle-section">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+              
+
+       
+
+        <a href="#" class="header-mobile__logo-wrap">
+            <img src="img/logo.png" alt="" class="header-mobile__logo">
+        </a>
+        
+        <div class="header-mobile__wrap">
+
+            <select class="header__select select">
+                        
+                <option class="header__option" value="ENG">EUR</option>
+                <option class="header__option" value="RU">RUB</option>
+            </select>
+            
+        </div>
+    </div> 
+</header>
+
+
+<div class="mobile-nav">
+    <ul>
+        <li><a href="#">Купить</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a class="logout" href="#">Выйти из аккаунта</a></li>
+    </ul>
+
+
+
+</div>
+<div class="balance">
+    <div class="container-min">
+        <div class="balance__inner">
+            <p class="balance__text text-center w600">Выберите консоль</span></p>
+
+        </div>
+    </div>
+    <img src="img/balance.png" alt="" class="balance__bg">
+</div>
+
+
+ 
+<div class="plat">
+    <div class="container-fluid">
+        <div class="plat__inner">
+            <div class="plat__nav">
+                <a href="#" class="plat__link plat__link--active">1. Выбор платформы</a>
+                <a href="#" class="plat__link">2. Количество монет</a>
+                <a href="#" class="plat__link">3. Оплата</a>
+                <a href="#" class="plat__link">4. Ваш баланс</a>
+                <a href="#" class="plat__link">4. Доставка монет</a>
+            </div>
+
+            
+            <div class="choice">
+                <a href="" class="choice__item choice__item--blue">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" viewBox="0 0 50 50"><g><g><g><g/><g><g><g><path fill="#1882ff" d="M5.483 31.652l-1.687.656C1.266 33.386-.046 34.51.001 35.494c.14 1.452 1.78 2.53 4.779 3.326a29.044 29.044 0 0 0 11.9.656V35.4l-3.233 1.218c-3.373 1.171-5.107.188-5.107.188-.515-.328-.75-1.125.656-1.64l1.78-.656 5.903-2.108V27.67l-1.499.515z"/></g><g><path fill="#1882ff" d="M30.123 15.207v12.134c2.53 1.218 4.778 1.312 6.465.047 1.733-1.218 2.67-3.326 2.67-6.512 0-3.326-.656-5.856-2.108-7.543-1.312-1.78-3.654-3.28-7.121-4.45-4.31-1.406-7.964-2.624-10.869-3.233v36.308l7.824 2.39V14.176c-.047-1.828 3.139-1.687 3.139 1.03z"/></g><g><path fill="#1882ff" d="M49.985 33.95c-.047-1.266-1.546-2.25-4.216-3.14-2.999-.983-5.575-1.452-8.386-1.358-2.577.047-5.669.89-8.433 1.78v4.638l7.59-2.67s2.295-.844 4.263-.328c1.499.375 1.405 1.218-.094 1.733l-1.733.703-10.026 3.607v4.732l4.685-1.687 11.244-3.982 1.311-.609c2.718-.984 3.936-2.061 3.795-3.42z"/></g></g></g></g></g></g></svg>
+                    
+
+                    <p class="choice__title">Playstation 4</p>
+
+                </a>
+                <a href="" class="choice__item choice__item choice__item--green">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40"><g><g><path fill="#18ff59" d="M8.909 3.393c-.02.016-.036.033-.055.049.114-.12.277-.25.384-.319C12.37 1.088 15.986 0 20 0c3.754 0 7.27 1.037 10.272 2.84.218.13.811.536 1.118.906v.002C28.494.555 19.98 7.406 19.98 7.406c-2.944-2.27-5.652-3.817-7.668-4.367-1.685-.462-2.85-.076-3.404.354zm31.086 16.605c0 5.182-1.97 9.9-5.2 13.452l-.001-.005c1.062-5.129-.67-8.826-3.564-13.529-2.9-4.705-7.633-9.308-7.633-9.308 4.205-3.97 7.617-5.2 8.355-5.432.812-.052 1.712.142 2.444.946.089.1.185.192.274.29a19.92 19.92 0 0 1 5.325 13.586zm-5.203 13.454l.002-.007c-.03-.17-.508-2.757-3.11-6.416-.633-.886-2.945-3.651-4.24-5.103a138.469 138.469 0 0 0-5.717-6.014c-.552-.549-1.135-1.121-1.747-1.713 0 0-.922.922-2.122 2.134v-.002c-1.536 1.552-3.527 3.576-4.632 4.757-1.968 2.1-7.607 8.696-7.924 12.394 0 0-1.254-2.933 1.499-9.698 1.798-4.423 7.233-11.064 9.502-13.227 0 0-2.073-2.282-4.676-3.859l-.015-.004s-.03-.024-.076-.053c-1.252-.746-2.618-1.322-3.933-1.398C6.26 5.338 5.41 6.321 5.41 6.321A19.927 19.927 0 0 0 0 20c0 11.045 8.954 20 20 20 5.862 0 11.136-2.528 14.796-6.546l-.001-.004-.003.003z"/></g></g></svg>
+
+                    <p class="choice__title">Xbox</p>
+
+                </a>
+                <a href="" class="choice__item choice__item--orange">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="38" height="50" viewBox="0 0 38 50"><g><g><path fill="#ff792e" d="M18.854.345c.103.262-.076.502-.222.704-1.038 1.447-1.854 3.066-2.18 4.806-.127.357-.099.623 0 .653 2.014-.174 4.286-.154 6.27.262 3.608.715 6.98 2.511 9.572 5.08 2.584 2.54 4.398 5.834 5.132 9.358a18.414 18.414 0 0 1-1.269 11.429c-3.45 7.255-9.268 13.392-16.386 17.283-.23.104-.56.109-.718-.116-.185-.236-.109-.57.074-.785a12.132 12.132 0 0 0 1.995-4.413c.07-.327.166-.66.137-.996-.117-.15-.311-.105-.476-.1-3.456.34-7.011-.267-10.133-1.769a18.832 18.832 0 0 1-8.058-7.326 18.184 18.184 0 0 1-2.589-9.64c.012-3.09.869-6.153 2.378-8.858A38.843 38.843 0 0 1 18.066.067c.279-.152.692-.039.788.278zm-.982 17.452a7.433 7.433 0 0 0-5.102 3.15c-.78 1.163-1.251 2.543-1.242 3.94-.058 1.873.7 3.749 2.016 5.098 1.148 1.217 2.744 2.01 4.418 2.222a7.46 7.46 0 0 0 4.926-1.092 7.276 7.276 0 0 0 3.085-4c.939-2.844-.186-6.176-2.635-7.933a7.456 7.456 0 0 0-5.466-1.385z"/></g></g></svg>
+                   
+
+                    <p class="choice__title">Origin</p>
+
+                </a>
+            </div>
+
+
+        </div>
+    </div>
+</div>
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__column">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="footer__desc">Сервис для автоматизированной
+                    продажи монет FIFA21</div>
+            </div>
+            <div class="footer__column">
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Купить</a>
+                    <a href="#" class="footer__link">Отзывы</a>
+                    <a href="#" class="footer__link">FAQ</a>
+
+                </nav>
+                <p class="footer__allrights">© 2020 gorfut.com. Все права защищены</p>
+            </div>
+            <div class="footer__column">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><img src="img/icons/insta.png" alt=""> instagram</a>
+                    <a href="#" class="footer__social-link"><img src="img/icons/twitter.png" alt=""> twitter</a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- для вызова popup класс кнопки show-popup -->
+
+<div class="popup">
+    <div class="popup__closer"></div>
+
+    <div class="popup__inner">
+
+
+
+        <div class="popup__wrapper">
+
+            <img src="img/icons/cancel.svg" alt="" class="popup__close">
+
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" class="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">Авторизация</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">Регистрация</label>
+                
+                
+                <div id="content-1">
+                    <form action="#">
+
+                        <label for="">E-mail</label>
+                        <input type="text" class="popup__input" placeholder="Введите почту">
+                        <label for="">Пароль</label>
+                        <input type="text" class="popup__input" placeholder="Введите пароль">
+
+                        <button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Авторизоваться</button>
+
+                    </form>
+                    
+                    <p class="popup__forgot">Забыли пароль?  <a href="">Восстановить</a></p>
+
+
+                    <div class="popup__block">
+                        <a href="" class="block__btn block__btn-primary btn-google"><img src="img/icons/google-plus.svg" alt="">Google</a>
+                        <a href="" class="block__btn block__btn-primary btn-facebook"><img src="img/icons/facebook.svg" alt="">Facebook</a>
+
+                    </div>
+                </div>
+                <div id="content-2">
+
+                    <form action="#">
+
+                        <label for="">Имя</label>
+                        <input type="text" class="popup__input" placeholder="Введите имя">
+                        <label for="">Телефон</label>
+                        <input type="text" class="popup__input" placeholder="Ваш номер телефона">
+                        <label for="">E-mail</label>
+                        <input type="text" class="popup__input" placeholder="Введите почту">
+                        
+                        <label for="">Пароль</label>
+                        <input type="text" class="popup__input" placeholder="Введите пароль">
+                        <label for="">Повторите праоль</label>
+                        <input type="text" class="popup__input" placeholder="Повторите пароль">
+
+                        <button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Зарегистрироваться</button>
+
+                    </form>
+                    
+                    <p class="popup__forgot">Уже есть аккаунт? <a href="">Войдите</a></p>
+
+
+        
+                </div>
+            </div>
+           
+        </div>
+
+        <img src="img/popup-player.png" alt="" class="popup__player">
+        <div class="popup__circle"></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+<script src="js/vendors.min.js"></script>
+<script>new WOW().init();</script>
+
+<script src="js/app.min.js"></script>
+
+
+
+<!-- <script>
+
+// parallax
+    
+    
+window.onload=function(){
+    const parallax = document.querySelector('.parallax');
+    console.log(parallax);
+    if (parallax) {
+        const small = document.querySelector('.block__gold--small');
+        const medium = document.querySelector('.block__gold--medium');
+        const big = document.querySelector('.block__gold--big');
+        const forSmall = 1;
+        const forMedium = 1;
+        const forBig = 1;
+        const speed = 0.05;
+        let positionX = 0, positionY = 0;
+        let coordXprocent = 0, coordYprocent = 0;
+        function setMouseParallaxStyle() {
+            const distX = coordXprocent - positionX;
+            const distY = positionY - coordYprocent;
+            positionX = positionX + (distX * speed);
+            positionY = positionY + (distY * speed);
+            small.style.cssText = `transform: translate(${positionX / forSmall}%,${positionY / forSmall}%);`;
+            medium.style.cssText = `transform: translate(${positionX / forMedium}%,${positionY / forMedium}%);`;
+            big.style.cssText = `transform: translate(${positionX / forBig}%,${positionY / forBig}%);`;
+            requestAnimationFrame(setMouseParallaxStyle);
+        }
+        setMouseParallaxStyle();
+        parallax.addEventListener("mousemove", function (e){
+            const parallaxWidth = parallax.offsetWidth;
+            const parallaxHeight = parallax.offsetHeight;  
+            const coordX = e.pageX - parallaxWidth / 2;
+            const coordY = e.pageY - parallaxHeight / 2;
+            coordXprocent = coordX / parallaxWidth * 100;
+            coordYprocent = coordY / parallaxHeight * 100;
+        });
+    }
+}
+</script> -->
+
+
+
+	</body>
+</html>

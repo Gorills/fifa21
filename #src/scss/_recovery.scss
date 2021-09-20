@@ -1,0 +1,39 @@
+.recovery {
+    width: 100%;
+    padding: 97px 0 178px;
+    min-height: calc(100vh - 314px);
+    // .recovery__inner
+
+    &__inner {
+        width: 100%;
+        max-width: 630px;
+        padding: 0 15px;
+        margin: 0 auto;
+    }
+
+    // .recovery__label
+
+    &__label {
+        color: #9E9EE0;
+        font-weight: 600;
+        font-size: 12px;
+        margin-bottom: 5px;
+        padding-left: 10px;
+    }
+
+    // .recovery__input
+
+    &__input {
+        width: 100%;
+        margin-bottom: 40px; 
+    }
+
+    // .recovery__btn
+
+    &__btn {
+        width: 100%;
+        padding: 16px 0;
+        font-size: 16px;
+        font-weight: 600;
+    }
+}

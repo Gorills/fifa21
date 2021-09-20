@@ -1,0 +1,27 @@
+.action {
+    
+    font-size: 16px;
+    font-weight: 700;
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    // .action__go
+
+    &__go {
+        border: 2px solid #E70873;
+        color: #E70873;
+        background: none;
+        
+
+    }
+
+    // .action__pay
+
+    &__pay {
+        background: linear-gradient(90deg, #E70873 0%, #FF14AB 100%);
+        color: #fff;
+        
+    }
+}

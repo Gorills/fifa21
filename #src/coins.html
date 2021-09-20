@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Бонусная система"
+	})
+	<body>
+		
+@@include('_header.html',{})
+<div class="balance">
+    <div class="container-min">
+        <div class="balance__inner">
+            <p class="balance__text text-center w600">Выберите консоль</span></p>
+
+        </div>
+    </div>
+    <img src="img/balance.png" alt="" class="balance__bg">
+</div>
+
+
+ 
+<div class="plat">
+    <div class="container-fluid">
+        <div class="plat__inner">
+            <div class="plat__nav">
+                <a href="#" class="plat__link plat__link--active">1. Выбор платформы</a>
+                <a href="#" class="plat__link plat__link--active">2. Количество монет</a>
+                <a href="#" class="plat__link ">3. Оплата</a>
+                <a href="#" class="plat__link">4. Ваш баланс</a>
+                <a href="#" class="plat__link">4. Доставка монет</a>
+            </div>
+
+            <form action="#" class="coins">
+                <div class="coins__inner">
+                    <label for="" class="coins__label"></label>
+                    <div class="coins__wrap">
+                        <input id="output" class="coins__input" type="text" value="200 000">
+                        <img src="img/icons/coin.png" alt="" class="coins__icon">
+                    </div>
+                
+
+                </div>
+
+
+                <div class="coins__range">
+                    
+                    <div class="coins__inner">
+                        <input step="100" id="range" min="50000" max="2000000" type="range" value="50000">
+                        
+                    </div>
+                    <div class="coins__range-grad">
+                        <p class="coins__range-point">50K</p>
+                        <p class="coins__range-point">400K</p>
+                        <p class="coins__range-point">800K</p>
+                        <p class="coins__range-point">1200K</p>
+                        <p class="coins__range-point">1600K</p>
+                        <p class="coins__range-point">2000K</p>
+
+
+                    </div>
+
+                </div>
+
+
+                <div class="coins__inner">
+
+                    <div class="coins__item">
+                        <div class="coins__column">
+                            <p class="coins__price">
+                                Стоимость:  
+                                <span class="coins__price--primary">4 550 ₽</span>
+                            </p>
+
+                        </div>
+                        <div class="coins__column">
+                            <p class="coins__comparison">750K = 750,000 монет</p>
+                            <p class="coins__minmax">Минимум — 50K монет</p>
+                            <p class="coins__minmax">Максимум — 2,000K монет</p>
+
+                        </div>
+
+                    </div>
+                    <button class="coins__btn btn-gradient">Следующий шаг</button>
+
+                </div>
+
+
+            </form>
+            
+
+        </div>
+    </div>
+</div>
+
+
+@@include('_footer.html',{})
+
+
+
+@@include('_popup.html',{})
+
+
+@@include('_js.html',{})
+
+
+
+	</body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Настройки профиля"
+	})
+	<body>
+		
+@@include('_header.html',{})
+
+
+<div class="balance">
+    <div class="container-min">
+        <div class="balance__inner">
+            <p class="balance__text text-center">Настройки профиля</span></p>
+
+        </div>
+    </div>
+    <img src="img/balance.png" alt="" class="balance__bg">
+</div>
+
+
+
+<div class="profile">
+    <div class="container-min">
+        <div class="profile__inner">
+            <form action="#" class="profile__personal">
+                <div class="profile__column">
+                    <p class="profile__title">Персональные данные:</p>
+                    <label for="" class="profile__label">Имя</label>
+                    <input type="text" class="profile__input" value="Егор">
+                    <label for="" class="profile__label">Фамилия</label>
+                    <input type="text" class="profile__input" value="Гайнцев">
+                    
+
+                    <button type="submit" class="profile__btn btn-gradient">Сохранить изменения</button>
+                </div>
+                <div class="profile__column">
+                    <p class="profile__title">Платежные системы:</p>
+                    <label for="" class="profile__label">WebMoney</label>
+                    <input type="text" class="profile__input" value="788472341352132">
+                    <label for="" class="profile__label">ЮМани</label>
+                    <input type="text" class="profile__input" value="2346465474567">
+                    <label for="" class="profile__label">Банковская карта России</label>
+                    <input type="text" class="profile__input" value="4276 2600 2345 0694">
+                    <label for="" class="profile__label">QIWI</label>
+                    <input type="text" class="profile__input" value="+7 999 333 11 11">
+                    <button type="submit" class="profile__btn btn-gradient">Сохранить изменения</button>
+                    
+                </div>
+
+            </form>
+            <form action="#" class="profile__pass">
+                <div class="profile__column">
+                    <p class="profile__title">Персональные данные:</p>
+                    <label for="" class="profile__label">Имя</label>
+                    <input type="text" class="profile__input" placeholder="Введите текущий пароль">
+                    <label for="" class="profile__label">Фамилия</label>
+                    <input type="text" class="profile__input" placeholder="Введите новый пароль">
+                    <label for="" class="profile__label">QIWI</label>
+                    <input type="text" class="profile__input" placeholder="Повторите новый пароль">
+
+                    <button type="submit" class="profile__btn btn-gradient">Изменить пароль</button>
+                </div>
+                
+
+                    
+                </div>
+
+            </form>
+
+
+
+
+        </div>
+    </div>
+</div>
+
+
+
+@@include('_footer.html',{})
+
+
+
+@@include('_popup.html',{})
+
+
+@@include('_js.html',{})
+
+
+
+	</body>
+</html>

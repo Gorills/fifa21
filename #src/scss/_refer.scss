@@ -1,0 +1,39 @@
+.refer {
+    width: 100%;
+    margin-bottom: 32px;
+    // .refer__title
+
+    &__title {
+        font-size: 12px;
+        font-weight: 600;
+        color: #9e9ee0;
+    }
+
+    // .refer__wrap
+
+    &__wrap {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 14px 0;
+      
+
+    }
+
+    // .refer__link
+
+    &__link {
+        font-size: 12px;
+        background: none;
+        color: #fff;
+        width: 281px;
+    }
+
+    // .refer__copy
+
+    &__copy {
+        font-size: 12px;
+        color: #9e9ee0;
+        cursor: pointer;
+    }
+}

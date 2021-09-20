@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Бонусная система"
+	})
+	<body>
+		
+@@include('_header.html',{})
+@@include('_balance.html',{})
+
+ 
+<div class="lk">
+    <div class="container-min">
+        <div class="lk__inner">
+            <div class="lk__nav">
+                <a href="#" class="lk__link">История покупок</a>
+                <a href="#" class="lk__link lk__link--active">Бонусная система</a>
+                <a href="#" class="lk__link">Реферальная программа</a>
+
+            </div>
+
+            <div class="bonus">
+                <div class="bonus__top">
+
+                    <div class="bonus__col">
+                        <p class="bonus__status">Ваш статус: 
+                            <span class="bonus__status-bold">Серебро <span class="bonus__status-primary">5%</span></span></p>
+                    </div>
+                    <div class="bonus__col">
+                        <div class="bonus__wrap">
+                            <p class="bonus__top-status">До статуса “Золото” осталось: </p> <p class="bonus__ball">5432 баллов</p>
+                        </div>
+                        <div class="bonus__wrap">
+                            <p class="bonus__top-status">Накоплено за все время: </p> <p class="bonus__ball">5432 баллов</p>
+                        </div>
+
+                    </div>
+
+                    <img src="img/icons/bitcoin.png" alt="" class="bonus__bitcoin">
+
+                </div>
+
+
+                <div class="progress">
+
+                    <div class="progress__top">
+                        <div class="progress__item">
+                            <div class="progress__circle progress__circle--bronze">
+                                3%
+
+                            </div>
+                            <p class="progress__title">Бронза</p>
+
+                        </div>
+                        <div class="progress__item progress__item--active">
+                            <div class="progress__circle progress__circle--silver">
+                                5%
+
+                            </div>
+                            <p class="progress__title">Серебро</p>
+
+                        </div>
+                        <div class="progress__item">
+                            <div class="progress__circle progress__circle--gold">
+                                6%
+
+                            </div>
+                            <p class="progress__title">Золото</p>
+
+                        </div>
+                        <div class="progress__item">
+                            <div class="progress__circle progress__circle--platina">
+                                7%
+
+                            </div>
+                            <p class="progress__title">Платина</p>
+
+                        </div>
+                        <div class="progress__item">
+                            <div class="progress__circle progress__circle--legend">
+                                10%
+
+                            </div>
+                            <p class="progress__title">Легенда</p>
+
+                        </div>
+
+
+                    </div>
+                    <div class="progress__bottom">
+                        <div class="progress__bar-wrap">
+                            <progress class="progress__bar" value="30" max="100"></progress>
+
+                            <div class="progress__point-wrap">
+                                <div class="progress__point progress__point--active"></div>
+                                <div class="progress__point progress__point--active"></div>
+                                <div class="progress__point"></div>
+                                <div class="progress__point"></div>
+                                <div class="progress__point"></div>
+    
+    
+                            </div>
+                        </div>
+                        
+
+                        <div class="progress__wrap">
+                            <p class="progress__ball">0 баллов</p>
+                            <p class="progress__ball progress__ball--active">1.000 баллов</p>
+                            <p class="progress__ball">15.000 баллов</p>
+                            <p class="progress__ball">50.000 баллов</p>
+                            <p class="progress__ball">150.000 баллов</p>
+
+                        </div>
+                    </div>
+
+
+
+                </div>
+
+                <div class="bonus__bottom-text">
+
+                    Вы можете списать бонусы на любую покупку. 1 бонус = 1 рубль.
+                </div>
+
+
+            </div>
+
+
+
+            <table class="table">
+                <tr>
+                  <th>Дата</th>
+                  <th>Бонусы</th>
+                  <th>За что</th>
+                  
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table__wrap table__wrap--flex">
+                            <p class="table__top">
+                                09.04.2021
+                            </p>
+                            <p class="table__bottom">
+                                19:07
+                            </p>
+
+                            </div>
+                    </td>
+                    <td><p class="table__plus">+10 баллов</p></td>
+                    
+                    <td>Использование для покупки #5069</td>
+                    
+
+                </tr>
+                <tr>
+                    <td>
+                        <div class="table__wrap table__wrap--flex">
+                            <p class="table__top">
+                                09.04.2021
+                            </p>
+                            <p class="table__bottom">
+                                19:07
+                            </p>
+
+                        </div>
+                    </td>
+                    <td><p class="table__minus">-20 баллов</p></td>
+                    
+                    <td>Использование для покупки #5069</td>
+                    
+
+                </tr>
+                
+            
+            </table>
+
+
+
+
+
+
+
+
+
+
+            @@include('_pagination.html',{})
+
+
+
+        </div>
+    </div>
+</div>
+
+
+@@include('_footer.html',{})
+
+
+
+@@include('_popup.html',{})
+
+
+@@include('_js.html',{})
+
+
+
+	</body>
+</html>

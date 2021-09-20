@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ru">
+	@@include('_head.html',{
+	"title":"Контакты"
+	})
+	<body>
+		
+@@include('_header.html',{})
+<div class="balance">
+    <div class="container-min">
+        <div class="balance__inner">
+            <p class="balance__text text-center w600">Контакты</span></p>
+
+        </div>
+    </div>
+    <img src="img/balance.png" alt="" class="balance__bg">
+</div>
+
+
+<div class="contacts">
+    <div class="contacts__inner">
+        <div class="contacts__wrap">
+            <div class="contacts__item">
+                <p class="contacts__text">Наша почта:</p>
+
+                <a href="#" class="contacts__link"><img src="img/icons/mail.png" alt="">support@gorfut.com</a>
+
+            </div>
+
+            <div class="contacts__item">
+                <p class="contacts__text">Социальные сети:</p>
+                
+                
+                <div class="contacts__wrap">
+                    <a href="#" class="contacts__link"><img src="img/icons/insta.png" alt="">instagram</a>
+                    <a href="#" class="contacts__link"><img src="img/icons/twitter.png" alt="">twitter</a>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <h1 class="contacts__title">Обратная связь</h1>
+        
+        <form action="" class="contacts__form">
+            <label for="" class="contacts__label">Имя</label>
+            <input type="text" class="contacts__input" placeholder="Ваше имя">
+            <label for="" class="contacts__label">E-mail</label>
+            <input type="text" class="contacts__input" placeholder="Ваша почта">
+            <label for="" class="contacts__label">Сообщение</label>
+            <textarea class="contacts__input" name="" placeholder="Ваше сообщение"></textarea>
+
+
+            <button class="btn-gradient contacts__btn">Отправить</button>
+
+        </form>
+
+
+    </div>
+</div>
+
+ 
+
+@@include('_footer.html',{})
+
+
+
+@@include('_popup.html',{})
+
+
+@@include('_js.html',{})
+
+
+
+	</body>
+</html>

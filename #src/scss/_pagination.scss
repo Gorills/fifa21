@@ -1,0 +1,29 @@
+.pagination {
+
+    padding: 0;
+    margin: 50px 0 0 0;
+    width: 100%;
+    text-align: center;
+
+    &__arrow {
+        color: #E51BEF!important;
+    }
+
+    a {
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+
+    li {
+        display: inline-block;
+        color: #fff;
+        font-weight: 500;
+        font-size: 14px;
+        padding: 2px 9px;
+    }
+    .active {
+        background-color: #E51BEF;
+    }
+}

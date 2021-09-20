@@ -1,0 +1,106 @@
+.profile {
+    width: 100%;
+    margin: 0 auto;
+    padding: 64px 0 116px 0;
+
+    // .profile__inner
+
+    &__inner {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        justify-content: space-between;
+        @media screen and (max-width:768px) {
+            flex-direction: column;
+        }
+    }
+
+    // .profile__personal
+
+    &__personal {
+        display: flex;
+        border-right: 2px solid #171727;
+        padding-right: 120px;
+
+        @media screen and (max-width:768px) {
+            padding-right: 15px;
+            margin: 0 auto 40px;
+            border-right: none;
+            border-bottom: 2px solid #171727;
+            padding-bottom: 40px;
+        }
+        @media screen and (max-width:480px) {
+            flex-direction: column;
+        }
+    }
+
+    // .profile__column
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 240px;
+        @media screen and (max-width:768px) {
+            
+            margin: 0 auto;
+        }
+    }
+    &__column + &__column {
+        margin-left: 60px;
+        @media screen and (max-width:768px) {
+            margin-left: 40px;
+        }
+        @media screen and (max-width:480px) {
+            margin-left: 0;
+            margin-top: 40px;
+        }
+    }
+
+    // .profile__title
+
+    &__title {
+        font-size: 18px;
+        font-weight: 600;
+        margin-bottom: 23px;
+    }
+
+    // .profile__label
+
+    &__label {
+        font-size: 12px;
+        font-weight: 600;
+        color: #9e9ee0;
+        margin-bottom: 5px;
+
+    }
+
+    // .profile__input
+
+    &__input {
+        width: 240px;
+        margin-bottom: 27px;
+        
+
+    }
+
+    // .profile__btn
+
+    &__btn {
+        font-weight: 600;
+        width: 240px;
+        height: 48px;
+        font-size: 16px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        color: #fff;
+        
+    }
+}

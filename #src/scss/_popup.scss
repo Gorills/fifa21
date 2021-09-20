@@ -1,0 +1,186 @@
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    &--active {
+        display: flex;
+    }
+
+    // .popup__closer
+
+    &__closer {
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1000;
+        background-color: rgba(0, 0, 0, 0.5);
+        cursor: pointer;
+    }
+
+    // .popup__inner
+
+    &__inner {
+        position: relative;
+        z-index: 1001;
+        background-color: #171727;
+        padding: 40px;
+        display: flex;
+        justify-content: flex-end;
+        position: relative;
+        width: 100%;
+        max-width: 840px;
+        overflow: hidden;
+        min-height: 580px;
+
+    }
+
+    // .popup__wrapper
+
+    &__wrapper {
+        width: 100%;
+        max-width: 420px;
+        margin-right: 0;
+    }
+
+    // .popup__close
+
+    &__close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        cursor: pointer;
+    }
+
+    // .popup__input
+
+
+
+    &__input {
+        
+        width: 100%;
+    }
+    #content-1 {
+        .popup__input {
+            margin-bottom: 35px;
+        }
+
+    }
+    #content-2 {
+        .popup__input {
+            margin-bottom: 19px;
+        }
+    }
+
+    // .popup__forgot
+
+    &__forgot {
+        color: #9E9EE0;
+        font-size: 14px;
+        text-align: center;
+        margin-bottom: 36px;
+        a {
+            color: #FF14AB;
+            font-weight: 600;
+        }
+    }
+
+    // .popup__block
+
+    &__block {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+
+        a + a {
+            margin-left: 20px;
+        }
+    }
+    .block__btn {
+        width: 100%;
+        margin-bottom: 24px;
+    }
+    // .popup__player
+
+    &__player {
+        position: absolute;
+        left: -50px;
+        bottom: -50px;
+        z-index: 999;
+    }
+
+    // .popup__circle
+
+    &__circle {
+        border-radius: 50%;
+        height: 412px;
+        width: 412px;
+        position: absolute;
+        left: -60px;
+        bottom: -20px;
+        background-color: #BF0121;
+        filter: blur(250px);
+
+    }
+    form {
+        margin-top: 34px;
+    }
+
+    .tabs {
+        font-size: 0;
+    }
+        
+    .tabs>input[type="radio"] {
+        display: none;
+    }
+    
+    .tabs>div {
+    /* скрыть контент по умолчанию */
+        display: none;
+   
+    
+        font-size: 16px;
+    }
+    
+    /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+    #tab-btn-1:checked~#content-1,
+    #tab-btn-2:checked~#content-2,
+    #tab-btn-3:checked~#content-3 {
+        display: block;
+    }
+    
+    .tabs>label {
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        width: 45%;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #FF14AB;
+        font-size: 16px;
+        line-height: 1.5;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+        cursor: pointer;
+        position: relative;
+        top: 1px;
+        margin-right: 20px;
+        
+    }
+    
+    
+    
+    .tabs>label:not(:first-of-type) {
+        border-left: none;
+    }
+    
+    .tabs>input[type="radio"]:checked+label {
+        
+    }
+}
