@@ -4370,6 +4370,39 @@ h6 {
   margin-bottom: 48px;
 }
 
+.delivery__new {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+.delivery__new-text {
+  font-weight: 500;
+}
+
+.delivery__new-primary {
+  font-weight: 500;
+  color: #E51BEF;
+  margin-bottom: 48px;
+}
+
+.delivery__new-img {
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  -webkit-animation: rotate 1s linear infinite;
+          animation: rotate 1s linear infinite;
+  margin-bottom: 39px;
+}
+
 .nendoveb-kubscupon {
   position: relative;
   height: 10px;
