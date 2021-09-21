@@ -967,10 +967,8 @@ h6 {
   font-weight: 600;
   width: 840px;
   margin-bottom: 50px;
-  -webkit-animation-duration: 0.5s;
-          animation-duration: 0.5s;
-  -webkit-animation-delay: 0.5s;
-          animation-delay: 0.5s;
+  -webkit-animation-delay: 1.5s;
+          animation-delay: 1.5s;
 }
 
 .block__primary {
@@ -981,10 +979,8 @@ h6 {
   font-size: 20px;
   margin-bottom: 100px;
   width: 481px;
-  -webkit-animation-duration: 1s;
-          animation-duration: 1s;
-  -webkit-animation-delay: 1s;
-          animation-delay: 1s;
+  -webkit-animation-delay: 2s;
+          animation-delay: 2s;
 }
 
 .block__wrap {
@@ -992,10 +988,8 @@ h6 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-delay: 1.5s;
-          animation-delay: 1.5s;
+  -webkit-animation-delay: 2.5s;
+          animation-delay: 2.5s;
 }
 
 .block__btn {
@@ -1099,7 +1093,6 @@ h6 {
 .block__player {
   position: relative;
   z-index: 2;
-  --animate-duration: 2s;
   --animate-delay: 3s;
   -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#000));
 }
@@ -2253,6 +2246,511 @@ h6 {
 .progress [tooltip][flow^=right]:hover::after {
   -webkit-animation: tooltips-horz 300ms ease-out forwards;
           animation: tooltips-horz 300ms ease-out forwards;
+}
+
+.progress .s0::before,
+.progress .s0::after {
+  left: 0% !important;
+}
+
+.progress .s1::before,
+.progress .s1::after {
+  left: 1% !important;
+}
+
+.progress .s2::before,
+.progress .s2::after {
+  left: 2% !important;
+}
+
+.progress .s3::before,
+.progress .s3::after {
+  left: 3% !important;
+}
+
+.progress .s4::before,
+.progress .s4::after {
+  left: 4% !important;
+}
+
+.progress .s5::before,
+.progress .s5::after {
+  left: 5% !important;
+}
+
+.progress .s6::before,
+.progress .s6::after {
+  left: 6% !important;
+}
+
+.progress .s7::before,
+.progress .s7::after {
+  left: 7% !important;
+}
+
+.progress .s8::before,
+.progress .s8::after {
+  left: 8% !important;
+}
+
+.progress .s9::before,
+.progress .s9::after {
+  left: 9% !important;
+}
+
+.progress .s10::before,
+.progress .s10::after {
+  left: 10% !important;
+}
+
+.progress .s11::before,
+.progress .s11::after {
+  left: 11% !important;
+}
+
+.progress .s12::before,
+.progress .s12::after {
+  left: 12% !important;
+}
+
+.progress .s13::before,
+.progress .s13::after {
+  left: 13% !important;
+}
+
+.progress .s14::before,
+.progress .s14::after {
+  left: 14% !important;
+}
+
+.progress .s15::before,
+.progress .s15::after {
+  left: 15% !important;
+}
+
+.progress .s16::before,
+.progress .s16::after {
+  left: 16% !important;
+}
+
+.progress .s17::before,
+.progress .s17::after {
+  left: 17% !important;
+}
+
+.progress .s18::before,
+.progress .s18::after {
+  left: 18% !important;
+}
+
+.progress .s19::before,
+.progress .s19::after {
+  left: 19% !important;
+}
+
+.progress .s20::before,
+.progress .s20::after {
+  left: 20% !important;
+}
+
+.progress .s21::before,
+.progress .s21::after {
+  left: 21% !important;
+}
+
+.progress .s22::before,
+.progress .s22::after {
+  left: 22% !important;
+}
+
+.progress .s23::before,
+.progress .s23::after {
+  left: 23% !important;
+}
+
+.progress .s24::before,
+.progress .s24::after {
+  left: 24% !important;
+}
+
+.progress .s25::before,
+.progress .s25::after {
+  left: 25% !important;
+}
+
+.progress .s26::before,
+.progress .s26::after {
+  left: 26% !important;
+}
+
+.progress .s27::before,
+.progress .s27::after {
+  left: 27% !important;
+}
+
+.progress .s28::before,
+.progress .s28::after {
+  left: 28% !important;
+}
+
+.progress .s29::before,
+.progress .s29::after {
+  left: 29% !important;
+}
+
+.progress .s30::before,
+.progress .s30::after {
+  left: 30% !important;
+}
+
+.progress .s31::before,
+.progress .s31::after {
+  left: 31% !important;
+}
+
+.progress .s32::before,
+.progress .s32::after {
+  left: 32% !important;
+}
+
+.progress .s33::before,
+.progress .s33::after {
+  left: 33% !important;
+}
+
+.progress .s34::before,
+.progress .s34::after {
+  left: 34% !important;
+}
+
+.progress .s35::before,
+.progress .s35::after {
+  left: 35% !important;
+}
+
+.progress .s36::before,
+.progress .s36::after {
+  left: 36% !important;
+}
+
+.progress .s37::before,
+.progress .s37::after {
+  left: 37% !important;
+}
+
+.progress .s38::before,
+.progress .s38::after {
+  left: 38% !important;
+}
+
+.progress .s39::before,
+.progress .s39::after {
+  left: 39% !important;
+}
+
+.progress .s40::before,
+.progress .s40::after {
+  left: 40% !important;
+}
+
+.progress .s41::before,
+.progress .s41::after {
+  left: 41% !important;
+}
+
+.progress .s42::before,
+.progress .s42::after {
+  left: 42% !important;
+}
+
+.progress .s43::before,
+.progress .s43::after {
+  left: 43% !important;
+}
+
+.progress .s44::before,
+.progress .s44::after {
+  left: 44% !important;
+}
+
+.progress .s45::before,
+.progress .s45::after {
+  left: 45% !important;
+}
+
+.progress .s46::before,
+.progress .s46::after {
+  left: 46% !important;
+}
+
+.progress .s47::before,
+.progress .s47::after {
+  left: 47% !important;
+}
+
+.progress .s48::before,
+.progress .s48::after {
+  left: 48% !important;
+}
+
+.progress .s49::before,
+.progress .s49::after {
+  left: 49% !important;
+}
+
+.progress .s50::before,
+.progress .s50::after {
+  left: 50% !important;
+}
+
+.progress .s51::before,
+.progress .s51::after {
+  left: 51% !important;
+}
+
+.progress .s52::before,
+.progress .s52::after {
+  left: 52% !important;
+}
+
+.progress .s53::before,
+.progress .s53::after {
+  left: 53% !important;
+}
+
+.progress .s54::before,
+.progress .s54::after {
+  left: 54% !important;
+}
+
+.progress .s55::before,
+.progress .s55::after {
+  left: 55% !important;
+}
+
+.progress .s56::before,
+.progress .s56::after {
+  left: 56% !important;
+}
+
+.progress .s57::before,
+.progress .s57::after {
+  left: 57% !important;
+}
+
+.progress .s58::before,
+.progress .s58::after {
+  left: 58% !important;
+}
+
+.progress .s59::before,
+.progress .s59::after {
+  left: 59% !important;
+}
+
+.progress .s60::before,
+.progress .s60::after {
+  left: 60% !important;
+}
+
+.progress .s61::before,
+.progress .s61::after {
+  left: 61% !important;
+}
+
+.progress .s62::before,
+.progress .s62::after {
+  left: 62% !important;
+}
+
+.progress .s63::before,
+.progress .s63::after {
+  left: 63% !important;
+}
+
+.progress .s64::before,
+.progress .s64::after {
+  left: 64% !important;
+}
+
+.progress .s65::before,
+.progress .s65::after {
+  left: 65% !important;
+}
+
+.progress .s66::before,
+.progress .s66::after {
+  left: 66% !important;
+}
+
+.progress .s67::before,
+.progress .s67::after {
+  left: 67% !important;
+}
+
+.progress .s68::before,
+.progress .s68::after {
+  left: 68% !important;
+}
+
+.progress .s69::before,
+.progress .s69::after {
+  left: 69% !important;
+}
+
+.progress .s70::before,
+.progress .s70::after {
+  left: 70% !important;
+}
+
+.progress .s71::before,
+.progress .s71::after {
+  left: 71% !important;
+}
+
+.progress .s72::before,
+.progress .s72::after {
+  left: 72% !important;
+}
+
+.progress .s73::before,
+.progress .s73::after {
+  left: 73% !important;
+}
+
+.progress .s74::before,
+.progress .s74::after {
+  left: 74% !important;
+}
+
+.progress .s75::before,
+.progress .s75::after {
+  left: 75% !important;
+}
+
+.progress .s76::before,
+.progress .s76::after {
+  left: 76% !important;
+}
+
+.progress .s77::before,
+.progress .s77::after {
+  left: 77% !important;
+}
+
+.progress .s78::before,
+.progress .s78::after {
+  left: 78% !important;
+}
+
+.progress .s79::before,
+.progress .s79::after {
+  left: 79% !important;
+}
+
+.progress .s80::before,
+.progress .s80::after {
+  left: 80% !important;
+}
+
+.progress .s81::before,
+.progress .s81::after {
+  left: 81% !important;
+}
+
+.progress .s82::before,
+.progress .s82::after {
+  left: 82% !important;
+}
+
+.progress .s83::before,
+.progress .s83::after {
+  left: 83% !important;
+}
+
+.progress .s84::before,
+.progress .s84::after {
+  left: 84% !important;
+}
+
+.progress .s85::before,
+.progress .s85::after {
+  left: 85% !important;
+}
+
+.progress .s86::before,
+.progress .s86::after {
+  left: 86% !important;
+}
+
+.progress .s87::before,
+.progress .s87::after {
+  left: 87% !important;
+}
+
+.progress .s88::before,
+.progress .s88::after {
+  left: 88% !important;
+}
+
+.progress .s89::before,
+.progress .s89::after {
+  left: 89% !important;
+}
+
+.progress .s90::before,
+.progress .s90::after {
+  left: 90% !important;
+}
+
+.progress .s91::before,
+.progress .s91::after {
+  left: 91% !important;
+}
+
+.progress .s92::before,
+.progress .s92::after {
+  left: 92% !important;
+}
+
+.progress .s93::before,
+.progress .s93::after {
+  left: 93% !important;
+}
+
+.progress .s94::before,
+.progress .s94::after {
+  left: 94% !important;
+}
+
+.progress .s95::before,
+.progress .s95::after {
+  left: 95% !important;
+}
+
+.progress .s96::before,
+.progress .s96::after {
+  left: 96% !important;
+}
+
+.progress .s97::before,
+.progress .s97::after {
+  left: 97% !important;
+}
+
+.progress .s98::before,
+.progress .s98::after {
+  left: 98% !important;
+}
+
+.progress .s99::before,
+.progress .s99::after {
+  left: 99% !important;
+}
+
+.progress .s100::before,
+.progress .s100::after {
+  left: 100% !important;
 }
 
 .refer {
@@ -4345,6 +4843,10 @@ h6 {
 
   .balance__inner {
     text-align: center;
+  }
+
+  .balance__text {
+    font-size: 18px;
   }
 
   .lk__nav {

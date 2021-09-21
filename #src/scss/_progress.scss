@@ -325,7 +325,12 @@
       [tooltip][flow^="right"]:hover::after {
         animation: tooltips-horz 300ms ease-out forwards;
       }
-      
-      
-      
+    
+    
+    @for $i from 0 through 100 {
+        .s#{$i}::before, .s#{$i}::after {
+          left: 0%+$i!important;
+          
+        }
+    }
 }

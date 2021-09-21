@@ -20,8 +20,8 @@
         font-weight: 600;
         width: 840px;
         margin-bottom: 50px;
-        animation-duration: .5s;
-        animation-delay: .5s;
+       
+        animation-delay: 1.5s;
         @media screen and (max-width: 768px) {
             font-size: 26px;
             text-align: center;
@@ -42,8 +42,8 @@
         font-size: 20px;
         margin-bottom: 100px;
         width: 481px;
-        animation-duration: 1s;
-        animation-delay: 1s;
+        
+        animation-delay: 2s;
         @media screen and (max-width: 768px) {
             font-size: 16px;
             text-align: center;
@@ -57,8 +57,8 @@
     &__wrap {
         margin-bottom: 175px;
         display: flex;
-        animation-duration: 1.5s;
-        animation-delay: 1.5s;
+        
+        animation-delay: 2.5s;
         @media screen and (max-width: 768px) {
             margin-bottom: 50px;
             justify-content: center;
@@ -235,7 +235,7 @@
     &__player {
         position: relative;
         z-index: 2;
-        --animate-duration: 2s;
+        
         --animate-delay: 3s;
         -webkit-mask-image: -webkit-gradient(linear,left bottom,left top,from(transparent),to(#000));
         @media screen and (max-width: 480px) {

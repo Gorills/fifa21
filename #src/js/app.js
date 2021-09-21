@@ -117,6 +117,12 @@ function parallax(e){
 
  $()
 
+ $(document).ready(function() {
+    const toolLip = $('.progress__bar').val()
 
+    $('.progress__point-wrap').addClass(`s${toolLip}`)
+
+    
+    });
     
  
