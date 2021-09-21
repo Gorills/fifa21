@@ -1565,9 +1565,9 @@ h6 {
   z-index: 1111;
   background: #13131d;
   border-top: 1px solid #9e9ee052;
-  -webkit-transition: all 2s ease;
-  -o-transition: all 2s ease;
-  transition: all 2s ease;
+  -webkit-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .mobile-footer--active {
@@ -5287,6 +5287,10 @@ h6 {
 
   .review__bottom {
     display: none;
+  }
+
+  .footer {
+    padding: 60px 16px 90px;
   }
 
   .mobile-footer {

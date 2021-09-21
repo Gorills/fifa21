@@ -6,6 +6,9 @@
     @media screen and (max-width: 768px) {
         padding: 60px 16px;
     }
+    @media screen and (max-width: 480px) {
+        padding: 60px 16px 90px;
+    }
     // .footer__inner
 
     &__inner {
@@ -122,7 +125,7 @@
     z-index: 1111;
     background: #13131d;
     border-top: 1px solid #9e9ee052;
-    transition: all 2s ease;
+    transition: all 1s ease;
 
     &--active {
         bottom: 0;
