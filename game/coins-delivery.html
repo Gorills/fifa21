@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html lang="ru">
+	 <head>
+	<title>Ваш баланс</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<script src="https://kit.fontawesome.com/0af96d350a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;900&display=swap" rel="stylesheet">
+	
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<meta name="robots" content="noindex, nofollow">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+	<body>
+		
+<header class="header">
+        <div class="header__inner">
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item">
+
+
+                        <!-- <select class="header__select select">
+                            
+                            <option class="header__option" value="ENG">EUR</option>
+                            <option class="header__option" value="RU">RUB</option>
+                        </select> -->
+
+                        <div class="header__select header__select">
+                            <p>EN</p> 
+                            <img src="img/icons/arrow-down.svg" alt="">
+
+
+                            <div class="header__select-drop">
+                                <a href="#" class="header__select-lang">EN</a>
+                                <a href="#" class="header__select-lang">RU</a>
+
+
+                            </div>
+
+                        </div>
+
+
+
+                    </li>
+                    <li class="header__item"><a href="#" class="header__link">Купить</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Отзывы</a></li>
+                    <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
+                    <li class="header__item"><a href="#" class="header__link">Статьи</a></li>
+                </ul>
+
+            </nav>
+
+            <a href="#" class="header__logo-wrap">
+                <img src="img/logo.png" alt="" class="header__logo">
+            </a>
+            
+            <div class="header__wrap">
+
+
+                <div class="header__col-balance">
+                    <div class="header__balance">
+                        <img src="img/icons/pay.png" alt="">
+                        <p class="header__text">1000 баллов</p>
+                        <img class="header__col-balance-arrow" src="img/icons/top-arrow.png" alt="">
+                    </div>
+                    <ul class="header__balance-dropdown">
+                        <li><p class="header__balance-drop">Баланс:</p><p class="header__balance-drop">1000 баллов</p></li>
+                        <li><a href="#">История покупок</a></li>
+                        <li><a href="#">Бонусная система</a></li>
+                        <li><a href="#">Реферальная программа</a></li>
+
+                    </ul>
+
+                </div>
+                <div class="header__col-balance">
+                    <div class="header__profile">
+                        <img src="img/icons/user.png" alt="">
+                        <p class="header__text">Егор Гайнцев</p>
+                        <img class="header__col-balance-arrow" src="img/icons/top-arrow.png" alt="">
+                        
+                    </div>
+                    <ul class="header__balance-dropdown">
+                        <li><p class="header__balance-drop">Егор Гайнцев</p></li>
+                        <li><a href="#">Профиль</a></li>
+                        <li class="warning"><a href="#">Выход</a></li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div> 
+</header>
+
+<header class="header-mobile">
+    <div class="header-mobile__inner">
+        
+        <div class="header-mobile__toggle">
+
+            <div class="toggle-menu" id="menu">
+                <div class="toggle-section">
+                    <a href="#" class="menu-btn">
+                        <span></span>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+              
+
+       
+
+        <a href="#" class="header-mobile__logo-wrap">
+            <img src="img/logo.png" alt="" class="header-mobile__logo">
+        </a>
+        
+        <div class="header-mobile__wrap">
+
+            <div class="header__select header__select">
+                <p>EN</p> 
+                <img src="img/icons/arrow-down.svg" alt="">
+
+
+                <div class="header__select-drop">
+                    <a href="#" class="header__select-lang">EN</a>
+                    <a href="#" class="header__select-lang">RU</a>
+
+
+                </div>
+
+            </div>
+            
+        </div>
+    </div> 
+</header>
+
+
+<div class="mobile-nav">
+    <ul>
+        <li><a href="#">Купить</a></li>
+        <li><a href="#">Отзывы</a></li>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Блог</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a class="logout" href="#">Выйти из аккаунта</a></li>
+    </ul>
+
+
+
+</div>
+<div class="balance">
+    <div class="container-min">
+        <div class="balance__inner">
+            <p class="balance__text text-center w600">Ваш баланс</span></p>
+
+        </div>
+    </div>
+    <img src="img/balance.png" alt="" class="balance__bg">
+</div>
+
+
+ 
+<div class="plat">
+    <div class="container-fluid">
+        <div class="plat__inner">
+            <div class="plat__nav">
+                <a href="#" class="plat__link plat__link--active">1. Выбор платформы</a>
+                <a href="#" class="plat__link plat__link--active">2. Количество монет</a>
+                <a href="#" class="plat__link plat__link--active">3. Оплата</a>
+                <a href="#" class="plat__link plat__link--active">4. Ваш баланс</a>
+                <a href="#" class="plat__link plat__link--active">4. Доставка монет</a>
+            </div>
+
+
+            
+            <div class="delivery">
+
+                <div class="delivery__top">
+                    <div class="delivery__top-wrap">
+                        <p class="delivery__top-text">Доставлено монет: 0 из 30K</p>
+                        <p class="delivery__top-procent">0%</p>
+
+                    </div>
+
+                    <div class="nendoveb-kubscupon">
+                        <div class="nendoveb-kubscupon__line"></div>
+                        <div class="kacekagen-protsem">
+                        
+                        </div>
+                      </div>
+
+
+
+                </div>
+
+               
+                <div class="delivery__new">
+                    <p class="delivery__new-text">Пожалуйста подождите пару минут, мы ищем игрока 
+                        для безопасной передачи монет</p>
+                    <p class="delivery__new-primary">Не нужно закрывать страницу!</p>
+                    
+
+                    <img src="img/icons/elipse2.png" alt="" class="delivery__new-img">
+
+                    <a href="#" class="btn-gradient error__btn">Отменить игрока</a>
+
+
+                </div>
+
+                 
+
+
+            </div>
+                
+            
+            
+            
+
+        </div>
+    </div>
+</div>
+
+
+<div class="delivery-popup">
+    <div class="delivery-popup__closer">
+
+    </div>
+
+    <div class="delivery-popup__inner">
+        <img src="img/icons/cancel.svg" alt="" class="delivery-popup__close">
+
+        <p class="delivery-popup__title">Выберите своего игрока с рынка</p>
+
+        
+
+        <table class="delivery-popup__table">
+            <tr>
+                <th></th>
+                <th>Игрок</th>
+                <th>Начальная цена</th>
+                <th>Купить сейчас</th>
+                <th>Осталось времени</th>
+                <th>Кол-во обладателей:</th>
+                <th>Кол-во контрактов:</th>
+
+            </tr>
+            
+            <tr>
+                <td>
+                    
+                    <input class="custom-radio" name="color" type="radio" id="custom-radio-1" value="">
+                    <label for="custom-radio-1"></label>
+                </td>
+                <td>
+                    <img src="img/icons/player-min.png" alt="">
+                    <img src="img/icons/flag-search.png" alt="">
+                    <p>83 CF</p>
+                </td>
+                <td>
+                    <p>9.000</p>
+                </td>
+                <td>
+                    <p>10.000</p> 
+
+                </td>
+                <td>
+                    <p>1 час. 53 мин.</p>
+                </td>
+                <td>
+                    <p>12</p>
+                </td>
+                <td>
+                    <p>12</p>
+
+
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    
+                    <input class="custom-radio" name="color" type="radio" id="custom-radio-2" value="">
+                    <label for="custom-radio-2"></label>
+                </td>
+                <td>
+                    <img src="img/icons/player-min.png" alt="">
+                    <img src="img/icons/flag-search.png" alt="">
+                    <p>83 CF</p>
+                </td>
+                <td>
+                    <p>9.000</p>
+                </td>
+                <td>
+                    <p>10.000</p>
+
+                </td>
+                <td>
+                    <p>1 час. 53 мин.</p>
+                </td>
+                <td>
+                    <p>12</p>
+                </td>
+                <td>
+                    <p>12</p>
+
+
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    
+                    <input class="custom-radio" name="color" type="radio" id="custom-radio-3" value="">
+                    <label for="custom-radio-3"></label>
+                </td>
+                <td>
+                    <img src="img/icons/player-min.png" alt="">
+                    <img src="img/icons/flag-search.png" alt="">
+                    <p>83 CF</p>
+                </td>
+                <td>
+                    <p>9.000</p>
+                </td>
+                <td>
+                    <p>10.000</p>
+
+                </td>
+                <td>
+                    <p>1 час. 53 мин.</p>
+                </td>
+                <td>
+                    <p>12</p>
+                </td>
+                <td>
+                    <p>12</p>
+
+
+
+                </td>
+
+
+            </tr>
+            <tr>
+                <td>
+                    
+                    <input class="custom-radio" name="color" type="radio" id="custom-radio-4" value="">
+                    <label for="custom-radio-4"></label>
+                </td>
+                <td>
+                    <img src="img/icons/player-min.png" alt="">
+                    <img src="img/icons/flag-search.png" alt="">
+                    <p>83 CF</p>
+                </td>
+                <td>
+                    <p>9.000</p>
+                </td>
+                <td>
+                    <p>10.000</p>
+
+                </td>
+                <td>
+                    <p>1 час. 53 мин.</p>
+                </td>
+                <td>
+                    <p>12</p>
+                </td>
+                <td>
+                    <p>12</p>
+
+
+
+                </td>
+
+
+            </tr>
+            
+     
+
+        </table>
+        <div class="delivery-popup__search">
+            <img src="img/icons/search.png" alt="" class="delivery-popup__search-icon">
+            <p class="delivery-popup__search-text">Идет поиск игрока...</p>
+        </div>
+
+        <div class="wrap">
+            <button class="coins__btn btn-gradient">Подтвердить</button>
+        </div>
+    </div>
+
+
+
+
+</div>
+
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer__inner">
+            <div class="footer__column">
+                <a href="#" class="footer__logo">
+                    <img src="img/logo.png" alt="">
+                </a>
+                <div class="footer__desc">Сервис для автоматизированной
+                    продажи монет FIFA21</div>
+            </div>
+            <div class="footer__column">
+                <nav class="footer__nav">
+                    <a href="#" class="footer__link">Купить</a>
+                    <a href="#" class="footer__link">Отзывы</a>
+                    <a href="#" class="footer__link">FAQ</a>
+
+                </nav>
+                <p class="footer__allrights">© 2020 gorfut.com. Все права защищены</p>
+            </div>
+            <div class="footer__column">
+                <div class="footer__social">
+                    <a href="#" class="footer__social-link"><img src="img/icons/insta.png" alt=""> instagram</a>
+                    <a href="#" class="footer__social-link"><img src="img/icons/twitter.png" alt=""> twitter</a>
+
+
+                </div>
+
+            </div>
+
+
+        </div>
+    </div>
+</footer>
+
+
+
+
+<!-- для вызова popup класс кнопки show-popup -->
+
+<div class="popup">
+    <div class="popup__closer"></div>
+
+    <div class="popup__inner">
+
+
+
+        <div class="popup__wrapper">
+
+            <img src="img/icons/cancel.svg" alt="" class="popup__close">
+
+            <div class="tabs">
+                <input type="radio" name="tab-btn" id="tab-btn-1" class="tab-btn-1" value="" checked>
+                <label for="tab-btn-1">Авторизация</label>
+                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
+                <label for="tab-btn-2">Регистрация</label>
+                
+                
+                <div id="content-1">
+                    <form action="#">
+
+                        <label for="">E-mail</label>
+                        <input type="text" class="popup__input" placeholder="Введите почту">
+                        <label for="">Пароль</label>
+                        <input type="text" class="popup__input" placeholder="Введите пароль">
+
+                        <button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Авторизоваться</button>
+
+                    </form>
+                    
+                    <p class="popup__forgot">Забыли пароль?  <a href="">Восстановить</a></p>
+
+
+                    <div class="popup__block">
+                        <a href="" class="block__btn block__btn-primary btn-google"><img src="img/icons/google-plus.svg" alt="">Google</a>
+                        <a href="" class="block__btn block__btn-primary btn-facebook"><img src="img/icons/facebook.svg" alt="">Facebook</a>
+
+                    </div>
+                </div>
+                <div id="content-2">
+
+                    <form action="#">
+
+                        <label for="">Имя</label>
+                        <input type="text" class="popup__input" placeholder="Введите имя">
+                        <label for="">Телефон</label>
+                        <input type="text" class="popup__input" placeholder="Ваш номер телефона">
+                        <label for="">E-mail</label>
+                        <input type="text" class="popup__input" placeholder="Введите почту">
+                        
+                        <label for="">Пароль</label>
+                        <input type="text" class="popup__input" placeholder="Введите пароль">
+                        <label for="">Повторите праоль</label>
+                        <input type="text" class="popup__input" placeholder="Повторите пароль">
+
+                        <button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Зарегистрироваться</button>
+
+                    </form>
+                    
+                    <p class="popup__forgot">Уже есть аккаунт? <a href="">Войдите</a></p>
+
+
+        
+                </div>
+            </div>
+           
+        </div>
+
+        <img src="img/popup-player.png" alt="" class="popup__player">
+        <div class="popup__circle"></div>
+
+    </div>
+</div>
+
+
+
+
+
+<!-- <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script> -->
+
+<script src="js/vendors.min.js"></script>
+
+
+
+
+<script src="js/app.min.js"></script>
+
+
+<script>
+
+wow = new WOW(
+    {
+    boxClass:     'wow',      // default
+    animateClass: 'animate__animated', // default
+    offset:       0,          // default
+    mobile:       true,       // default
+    live:         true        // default
+}
+)
+wow.init();
+
+
+</script>
+
+
+
+	</body>
+</html>
