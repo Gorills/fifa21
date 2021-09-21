@@ -3160,16 +3160,6 @@ h6 {
   padding: 0;
   border: none;
   margin-bottom: 16px;
-  background: -webkit-gradient(linear, left top, right top, from(#ffaf00), color-stop(50%, #ffaf00), color-stop(50%, #fff), to(#fff));
-  background: -o-linear-gradient(left, #ffaf00 0%, #ffaf00 50%, #fff 50%, #fff 100%);
-  background: linear-gradient(to right, #ffaf00 0%, #ffaf00 50%, #fff 50%, #fff 100%);
-  border-radius: 8px;
-  width: 100%;
-  outline: none;
-  -webkit-transition: background 450ms ease-in;
-  -o-transition: background 450ms ease-in;
-  transition: background 450ms ease-in;
-  -webkit-appearance: none;
 }
 
 .coins__range input[type=range] {
