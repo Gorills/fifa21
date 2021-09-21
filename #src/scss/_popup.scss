@@ -183,7 +183,7 @@
         user-select: none;
         width: 45%;
         padding-bottom: 12px;
-        border-bottom: 1px solid #FF14AB;
+        border-bottom: 1px solid #9E9EE0;
         font-size: 16px;
         line-height: 1.5;
         transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
@@ -205,6 +205,8 @@
     }
     
     .tabs>input[type="radio"]:checked+label {
+        color: #fff;
+        border-color: #FF14AB;
         
     }
 }
