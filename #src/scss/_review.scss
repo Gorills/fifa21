@@ -19,6 +19,10 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+
+        @media screen and (max-width: 1024px) {
+            justify-content: center;
+        }
     }
 
     // .review__item
@@ -28,7 +32,7 @@
         margin-bottom: 20px;
         background-color: #171727;
         padding: 25px;
-        @media screen and(max-width: 768px) {
+        @media screen and(max-width: 1024px) {
             margin: 0 auto 20px;
         }
 

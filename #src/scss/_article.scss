@@ -48,6 +48,10 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+
+        @media screen and (max-width: 1024px) {
+            justify-content: center;
+        }
     }
 
     // .article__item
@@ -58,8 +62,11 @@
         margin-bottom: 56px;
         position: relative;
 
+        @media screen and (max-width: 1024px) {
+            margin: 0 auto 20px;
+        }
         @media screen and (max-width: 768px) {
-            margin: 0 auto;
+            margin: 0 auto 20px;
         }
 
         &:hover {
