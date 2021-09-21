@@ -112,13 +112,17 @@ if (range) {
 }
 
 
-document.getElementById("range").oninput = function() {
-    var value = (this.value-this.min)/(this.max-this.min)*100
+if(range) {
+    document.getElementById("range").oninput = function() {
+        var value = (this.value-this.min)/(this.max-this.min)*100
+    
+    
+    
+        this.style.background = 'linear-gradient(to right, #ffaf00 0%, #ffaf00 ' + value + '%, rgba(101, 101, 154, 0.25) ' + value + '%, rgba(101, 101, 154, 0.25) 100%)'
+      };
+}
 
 
-
-    this.style.background = 'linear-gradient(to right, #ffaf00 0%, #ffaf00 ' + value + '%, rgba(101, 101, 154, 0.25) ' + value + '%, rgba(101, 101, 154, 0.25) 100%)'
-  };
 
 
 
