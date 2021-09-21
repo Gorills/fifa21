@@ -4030,6 +4030,7 @@ h6 {
   background-color: #BF0121;
   -webkit-filter: blur(250px);
           filter: blur(250px);
+  z-index: -1;
 }
 
 .popup form {

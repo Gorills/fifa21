@@ -143,6 +143,7 @@
         bottom: -20px;
         background-color: #BF0121;
         filter: blur(250px);
+        z-index: -1;
         @media screen and (max-width: 768px) {
             display: none;
         }
