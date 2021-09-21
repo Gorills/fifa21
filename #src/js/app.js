@@ -111,7 +111,10 @@ if (range) {
 }
 
 
-
+document.getElementById("range").oninput = function() {
+    var value = (this.value-this.min)/(this.max-this.min)*100
+    this.style.background = 'linear-gradient(to right, #ffaf00 0%, #ffaf00 ' + value + '%, #fff ' + value + '%, white 100%)'
+  };
 
 
 

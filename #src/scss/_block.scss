@@ -3,7 +3,7 @@
     margin: 0 auto;
     padding: 60px 0 80px;
     position: relative;
-    overflow: hidden;
+    
     // .block__inner
 
     &__inner {
@@ -155,6 +155,8 @@
 
     &__icon {
         transition: all 3s linear;
+        height: 40px;
+        margin-bottom: 26px;
         --animate-duration: 2s;
         --animate-delay: 3s;
         
@@ -222,8 +224,8 @@
         height: 449px;
         background: #E70873;
         opacity: 0.7;
-        filter: blur(300px);
-        z-index: 1;
+        filter: blur(90px);
+        z-index: -2;
         
 
     }
@@ -231,7 +233,7 @@
 
     &__player {
         position: relative;
-        z-index: 2;
+        z-index: -1;
         
         --animate-delay: 3s;
         -webkit-mask-image: -webkit-gradient(linear,left bottom,left top,from(transparent),to(#000));
