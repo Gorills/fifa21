@@ -1106,14 +1106,13 @@ h6 {
   opacity: 0.7;
   -webkit-filter: blur(90px);
           filter: blur(90px);
-  z-index: -2;
+  z-index: -1;
 }
 
 .block__player {
   position: relative;
-  z-index: -1;
+  z-index: 2;
   --animate-delay: 3s;
-  -webkit-mask-image: -webkit-gradient(linear, left bottom, left top, from(transparent), to(#000));
 }
 
 .block__dark {
@@ -4867,6 +4866,10 @@ h6 {
 }
 
 @media screen and (max-width: 768px) {
+  .block {
+    overflow: hidden;
+  }
+
   .block__title {
     font-size: 26px;
     text-align: center;

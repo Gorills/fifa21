@@ -14,6 +14,7 @@ $('.how__slider').slick({
 });
 
 
+
 $('.show-popup').click(function(e){
     e.preventDefault();
 
@@ -121,6 +122,7 @@ document.getElementById("range").oninput = function() {
 
 
 
+
 document.addEventListener("mousemove", parallax);
 function parallax(e){
     this.querySelectorAll('.layer').forEach(layer => {
@@ -148,7 +150,7 @@ function parallax(e){
  });
  
 
- $()
+ 
 
  $(document).ready(function() {
     const toolLip = $('.progress__bar').val()
