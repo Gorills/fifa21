@@ -47,6 +47,33 @@ $('.header__select').click(function(e){
 })
 
 
+
+$('.success').click(function(e){
+    e.preventDefault();
+    $('.alert--success').addClass('alert--success--active')
+})
+
+
+$('.alert__close').click(function(e){
+    e.preventDefault();
+    $('.alert--success').removeClass('alert--success--active')
+})
+
+
+$('.congrat').click(function(e){
+    e.preventDefault();
+    $('.alert--congr').addClass('alert--congr--active')
+})
+
+$('.alert__close').click(function(e){
+    e.preventDefault();
+    $('.alert--congr').removeClass('alert--congr--active')
+})
+
+
+
+
+
 function myFunction() {
 /* Get the text field */
 var copyText = document.getElementById("refer");

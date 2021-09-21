@@ -12,10 +12,12 @@
     // .refer__wrap
 
     &__wrap {
+        margin-top: 5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 14px 0;
+        padding: 14px 20px;
+        border: 1px solid #9e9ee0;
       
 
     }
@@ -23,10 +25,13 @@
     // .refer__link
 
     &__link {
+        padding: 0;
+        
         font-size: 12px;
         background: none;
         color: #fff;
         width: 281px;
+        border: none;
     }
 
     // .refer__copy

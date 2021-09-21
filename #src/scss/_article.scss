@@ -57,6 +57,11 @@
         max-width: 380px;
         margin-bottom: 56px;
         position: relative;
+
+        @media screen and (max-width: 768px) {
+            margin: 0 auto;
+        }
+
         &:hover {
             .article__img {
                 transform: scale(1.1);
