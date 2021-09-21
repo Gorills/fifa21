@@ -1096,16 +1096,15 @@ h6 {
 .block__ellipse {
   position: absolute;
   top: 50%;
-  left: 10%;
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   width: 484px;
   height: 449px;
   background: #E70873;
-  opacity: 0.7;
-  -webkit-filter: blur(90px);
-          filter: blur(90px);
+  opacity: 1;
+  -webkit-filter: blur(300px);
+          filter: blur(300px);
   z-index: -2;
 }
 
@@ -4782,6 +4781,10 @@ h6 {
 }
 
 @media screen and (max-width: 1024px) {
+  .block__item {
+    margin: 0 15px;
+  }
+
   .review__row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;

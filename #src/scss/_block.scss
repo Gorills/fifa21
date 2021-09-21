@@ -136,6 +136,9 @@
         height: 235px;
         background-color: #171727;
         padding: 20px;
+        @media screen and (max-width: 1024px) {
+            margin: 0 15px;
+        }
         @media screen and (max-width: 768px) {
             margin: 0 auto 20px;
         }
@@ -221,13 +224,13 @@
     &__ellipse {
         position: absolute;
         top: 50%;
-        left: 10%;
+        
         transform: translateY(-50%);
         width: 484px;
         height: 449px;
         background: #E70873;
-        opacity: 0.7;
-        filter: blur(90px);
+        opacity: 1;
+        filter: blur(300px);
         z-index: -2;
         
 
