@@ -126,7 +126,7 @@
     background: #13131d;
     border-top: 1px solid #9e9ee052;
     transition: all 1s ease;
-
+    display: none;
     &--active {
         bottom: 0;
     }
