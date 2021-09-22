@@ -5302,6 +5302,9 @@ h6 {
       -ms-flex-pack: center;
           justify-content: center;
   z-index: 999;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
 }
 

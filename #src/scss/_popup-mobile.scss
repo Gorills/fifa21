@@ -8,6 +8,7 @@
     align-items: center;
     justify-content: center;
     z-index: 999;
+    display: flex;
     @media screen and (max-width: 768px) {
         align-items: flex-start;
     }
