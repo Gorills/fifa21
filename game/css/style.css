@@ -102,36 +102,42 @@ input {
   color: #fff;
   border: 1px solid #9e9ee0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 input::-webkit-input-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 input::-moz-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 input:-ms-input-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 input::-ms-input-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 input::placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 textarea {
@@ -142,36 +148,42 @@ textarea {
   color: #fff;
   border: 1px solid #9e9ee0;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 textarea::-webkit-input-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 textarea::-moz-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 textarea:-ms-input-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 textarea::-ms-input-placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 textarea::placeholder {
   color: #fff;
   opacity: 40%;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 input::-ms-clear {
