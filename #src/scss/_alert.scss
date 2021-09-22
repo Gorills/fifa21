@@ -1,11 +1,10 @@
 .alert {
-    position: fixed;
-    right: 60px;
-    bottom: 85px;
+   
     display: flex;
     align-items: center;
     font-family: 'Rubik', sans-serif;
-    z-index: 999999;
+    position: relative;
+    
 
     &--success {
         padding: 21px 47px;
@@ -21,6 +20,7 @@
     }
 
     &--congr { 
+        margin-top: 20px;
         display: none;
         width: 420px;
         padding: 23px;
@@ -53,5 +53,24 @@
         right: 25px;
         transform: translateY(-50%);
         cursor: pointer;
+    }
+
+
+    // .alert-wrap
+
+    &__wrap {
+        position: fixed;
+        display: inline-block;
+        right: 60px;
+        bottom: 85px;
+        right: 60px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        z-index: 999999;
+
+        @media screen and (max-width: 568px) {
+            right: 15px;
+        }
     }
 }

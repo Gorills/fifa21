@@ -191,6 +191,20 @@
         cursor: pointer;
         transition: all .5s ease;
         font-weight: 500;
+        &--center {
+            justify-content: flex-end;
+        }
+
+
+        @media screen and (max-width:768px) {
+            &--center {
+                
+                justify-content: center;
+            }
+        }
+        
+
+
         &:hover {
             border-color: #E70873;
             color: #fff;

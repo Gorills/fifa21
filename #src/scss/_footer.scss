@@ -151,6 +151,13 @@
         font-weight: 500;
         line-height: 13px;
 
+        &:hover {
+            color: #E70873;
+            svg path {
+                fill: #ff14ab;
+            }
+        }
+
         &--active {
             color: #E70873;
             svg path {
