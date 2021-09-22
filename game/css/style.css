@@ -6236,6 +6236,18 @@ h6 {
     padding: 20px 50px;
   }
 
+  .alert--success {
+    width: 340px;
+  }
+
+  .alert--congr {
+    width: 340px;
+  }
+
+  .alert__close {
+    right: 15px;
+  }
+
   .table-his__cancell {
     right: 20px;
   }
