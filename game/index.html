@@ -693,11 +693,6 @@
 	</div>
 </div>
 
-
-
-
-
-
 <div class="mobile-footer">
     <div class="mobile-footer__inner">
         <a href="#" class="mobile-footer__item">
@@ -723,6 +718,11 @@
     </div>
 
 </div>
+
+
+
+
+
 
 
 
@@ -885,6 +885,24 @@ wow.init();
 
 </script>
 
+
+<script>
+  $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        /*Если сделали скролл на 100px задаём новый класс для header*/
+        if(height > 20){
+            $('.mobile-footer').addClass('mobile-footer--active');
+           
+            
+        } else{
+            /*Если меньше 100px удаляем класс для header*/
+            $('.mobile-footer').removeClass('mobile-footer--active');
+            
+        }
+    });
+
+
+</script>
 
 
 	</body>

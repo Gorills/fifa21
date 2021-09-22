@@ -6058,6 +6058,10 @@ h6 {
     font-weight: 600;
   }
 
+  .table {
+    display: none;
+  }
+
   .table__cancell {
     right: 20px;
   }
