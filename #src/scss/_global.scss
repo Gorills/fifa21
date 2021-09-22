@@ -18,7 +18,10 @@ body {
 } 
 
 .w200 {
-	max-width: 190px!important;
+	@media screen and (max-width: 480px) {
+		max-width: 190px!important;
+	}
+	
 }
 
 .body--fixed {
