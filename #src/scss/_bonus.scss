@@ -41,13 +41,13 @@
 
     &__col + &__col {
         padding-left: 60px;
-        border-left: 1px solid #9E9EE0;
+        border-left: 1px solid #9e9ee046;
         @media screen and (max-width: 768px) {
             padding-left: 0;
             margin-top: 34px;
             padding-top: 34px;
             border-left: none;
-            border-top: 1px solid #9e9ee0a1;
+            border-top: 1px solid #9e9ee046;
         }
         @media screen and (max-width:480px) {
             max-width: 100%;

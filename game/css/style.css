@@ -1952,7 +1952,7 @@ h6 {
 
 .bonus__col + .bonus__col {
   padding-left: 60px;
-  border-left: 1px solid #9E9EE0;
+  border-left: 1px solid #9e9ee046;
 }
 
 .bonus__status {
@@ -5440,7 +5440,7 @@ h6 {
     margin-top: 34px;
     padding-top: 34px;
     border-left: none;
-    border-top: 1px solid #9e9ee0a1;
+    border-top: 1px solid #9e9ee046;
   }
 
   .bonus__status {
