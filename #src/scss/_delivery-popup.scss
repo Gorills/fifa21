@@ -88,6 +88,9 @@
         @media screen and (max-width: 768px) {
           overflow-x: scroll;
         }
+        @media screen and (max-width: 480px) {
+          display: none;
+        }
 
         th {
             color: #9E9EE0;

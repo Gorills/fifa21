@@ -97,7 +97,7 @@ body {
 }
 
 input {
-  background: none;
+  background-color: #13131D;
   padding: 14px 20px;
   color: #fff;
   border: 1px solid #9e9ee0;
@@ -1909,6 +1909,7 @@ h6 {
   position: relative;
   background-color: #171727;
   margin-bottom: 65px;
+  overflow: hidden;
 }
 
 .bonus__col {
@@ -1972,10 +1973,17 @@ h6 {
 
 .bonus__bitcoin {
   position: absolute;
-  right: -20px;
-  top: -11px;
+  right: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   opacity: 20%;
   z-index: 1;
+}
+
+.bonus__bitcoin svg {
+  fill: #fff;
 }
 
 .bonus__bottom-text {
@@ -5140,7 +5148,7 @@ h6 {
     margin-top: 34px;
     padding-top: 34px;
     border-left: none;
-    border-top: 1px solid #9E9EE0;
+    border-top: 1px solid #9e9ee0a1;
   }
 
   .bonus__status {
@@ -5160,7 +5168,6 @@ h6 {
     -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
             transform: translateY(-50%);
-    right: -36px;
   }
 
   .bonus__bottom-text {
@@ -5383,7 +5390,7 @@ h6 {
   }
 
   .bonus__col + .bonus__col {
-    max-width: 230px;
+    max-width: 100%;
   }
 
   .profile__personal {
@@ -5440,6 +5447,10 @@ h6 {
   }
 
   .delivery__item-new-left {
+    display: none;
+  }
+
+  .delivery-popup__table {
     display: none;
   }
 

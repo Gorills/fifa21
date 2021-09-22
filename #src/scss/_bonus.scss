@@ -12,6 +12,7 @@
         position: relative;
         background-color: #171727;
         margin-bottom: 65px;
+        overflow: hidden;
         @media screen and (max-width: 768px) {
             flex-direction: column;
             padding: 20px;
@@ -46,10 +47,10 @@
             margin-top: 34px;
             padding-top: 34px;
             border-left: none;
-            border-top: 1px solid #9E9EE0;
+            border-top: 1px solid #9e9ee0a1;
         }
         @media screen and (max-width:480px) {
-            max-width: 230px;
+            max-width: 100%;
             
         }
     }
@@ -111,14 +112,20 @@
 
     &__bitcoin {
         position: absolute;
-        right: -20px;
-        top: -11px;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
         opacity: 20%;
         z-index: 1;
+
+        svg {
+            fill: #fff;
+        }
+
         @media screen and (max-width: 768px) {
             top: 50%;
             transform: translateY(-50%);
-            right: -36px;
+            
         }
     }
     // .bonus__bottom-text
