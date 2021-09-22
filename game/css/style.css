@@ -4964,7 +4964,7 @@ h6 {
 .alert--congr {
   margin-top: 20px;
   display: none;
-  width: 420px;
+  width: 400px;
   padding: 23px;
   background: #171727;
   -webkit-box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.25);
@@ -4983,7 +4983,7 @@ h6 {
 }
 
 .alert--congr .alert__congr {
-  margin-right: 39px;
+  margin-right: 15px;
 }
 
 .alert__close {
@@ -5937,6 +5937,13 @@ h6 {
   .pay__way {
     margin-bottom: 16px;
     max-width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .pay__way svg {
+    margin-right: 24px;
   }
 
   .article__item {
