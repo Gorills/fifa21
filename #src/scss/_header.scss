@@ -46,6 +46,7 @@
 
         img {
             transition: all .5s ease;
+            opacity: 50%;
         }
 
         p {
@@ -156,7 +157,10 @@
     }
 
 
-
+    .header__col-balance-arrow {
+        transition: all .5s ease;
+        opacity: 50%;
+    }
     .header__col-balance {
         position: relative;
         border-radius: 6px;

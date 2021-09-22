@@ -16,7 +16,11 @@
     }
     // .article__nav-wrap
     &__nav-wrap {
-        overflow-x: scroll;
+        
+        @media screen and (max-width: 480px) {
+            overflow-x: scroll;
+            
+        }
     }
     // .article__nav
 
@@ -62,8 +66,8 @@
         justify-content: space-between;
         flex-wrap: wrap;
 
-        @media screen and (max-width: 1024px) {
-            justify-content: center;
+        @media screen and (max-width: 1366px) {
+            justify-content: space-around;
         }
     }
 
