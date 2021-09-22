@@ -1704,7 +1704,7 @@ h6 {
   padding-bottom: 12px;
   text-align: center;
   position: relative;
-  color: #fff;
+  color: #9E9EE0;
   font-weight: 500;
   font-size: 16px;
   white-space: nowrap;
@@ -1724,6 +1724,10 @@ h6 {
   background: -webkit-gradient(linear, left top, right top, from(#E70873), to(#FF14AB));
   background: -o-linear-gradient(left, #E70873 0%, #FF14AB 100%);
   background: linear-gradient(90deg, #E70873 0%, #FF14AB 100%);
+}
+
+.lk__link--active {
+  color: #fff;
 }
 
 .lk__link + .lk__link {
@@ -1777,6 +1781,7 @@ h6 {
 }
 
 .table__cancell {
+  cursor: pointer;
   position: absolute;
   right: 45px;
   top: 50%;
@@ -1844,7 +1849,7 @@ h6 {
 
 .action {
   font-size: 16px;
-  font-weight: 700;
+  font-weight: 600;
   width: 130px;
   height: 40px;
   display: -webkit-box;
@@ -1856,6 +1861,7 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: "Montserrat", sans-serif;
 }
 
 .action:hover {
@@ -3460,6 +3466,7 @@ h6 {
   font-size: 12px;
   padding-left: 0 !important;
   color: #fff;
+  font-weight: 400;
 }
 
 .pay__checkbox-label span {
@@ -3507,6 +3514,7 @@ h6 {
   border: 1px solid #E70873;
   width: 180px;
   height: 48px;
+  text-align: center;
 }
 
 .pay__btn:hover {
@@ -5022,14 +5030,6 @@ h6 {
   color: #F53B3B;
 }
 
-.table-his__w {
-  width: 100%;
-}
-
-.table-his__w a {
-  width: 100%;
-}
-
 .history__title {
   text-align: center;
   margin-bottom: 24px;
@@ -5704,15 +5704,29 @@ h6 {
   }
 
   .profile__personal {
+    width: 100%;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-right: 0;
+  }
+
+  .profile__column {
+    max-width: 100%;
   }
 
   .profile__column + .profile__column {
     margin-left: 0;
     margin-top: 40px;
+  }
+
+  .profile__input {
+    width: 100%;
+  }
+
+  .coins__range-point {
+    font-size: 12px;
   }
 
   .contacts {
@@ -5762,6 +5776,10 @@ h6 {
 
   .delivery__item-new-left {
     display: none;
+  }
+
+  .delivery__new-text {
+    margin-bottom: 20px;
   }
 
   .delivery-popup__search {

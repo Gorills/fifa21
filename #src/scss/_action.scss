@@ -1,12 +1,13 @@
 .action {
     
     font-size: 16px;
-    font-weight: 700;
+    font-weight: 600;
     width: 130px;
     height: 40px;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: 'Montserrat', sans-serif; 
     &:hover {
 		transform: scale(1.05);
 	}
