@@ -17,6 +17,9 @@
             padding: 20px;
             overflow: hidden;
         }
+        @media screen and (max-width: 480px) {
+            align-items: flex-start;
+        }
     }
 
     // .bonus__col
@@ -44,6 +47,10 @@
             padding-top: 34px;
             border-left: none;
             border-top: 1px solid #9E9EE0;
+        }
+        @media screen and (max-width:480px) {
+            max-width: 230px;
+            
         }
     }
 

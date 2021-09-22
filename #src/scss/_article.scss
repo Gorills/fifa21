@@ -3,13 +3,21 @@
     padding: 40px 119px;
     width: 100%;
     margin: 0 auto;
+
+    @media screen and (max-width: 480px) {
+        padding: 40px 0;
+        overflow: hidden;
+    }
     // .article__inner
 
     &__inner {
         width: 100%;
         margin: 0 auto;
     }
-
+    // .article__nav-wrap
+    &__nav-wrap {
+        overflow-x: scroll;
+    }
     // .article__nav
 
     &__nav {
@@ -17,6 +25,11 @@
         display: flex;
         justify-content: center;
         margin-bottom: 64px;
+
+        @media screen and (max-width: 480px) {
+            
+            min-width: 460px;
+        }
     }
 
     // .article__link

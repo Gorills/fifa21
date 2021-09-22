@@ -3,13 +3,14 @@
     padding: 62px 136px;
     margin: 0 auto;
     min-height: calc(100vh - 377px);
+    
     // .plat__inner 
 
     &__inner {
     }
 
     @media screen and (max-width: 992px) {
-        padding: 50px 0;
+        padding: 0 0;
     }
 
     // .plat__nav

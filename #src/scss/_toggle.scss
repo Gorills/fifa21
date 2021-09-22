@@ -20,8 +20,8 @@
 .menu-btn {
     display: flex;
     justify-content: center;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 32px;
     border-radius: 50%;
     position: relative;
     
@@ -35,8 +35,8 @@
     top: 50%;
     margin-top: -1px;
     left: 50%;
-    margin-left: -10px;
-    width: 20px;
+    margin-left: -16px;
+    width: 32px;
     height: 2px;
     background-color: #E51BEF ;
 }
@@ -47,10 +47,10 @@
     transition: 0.2s;
 }
 .menu-btn span::before{
-    transform: translateY(-5px);
+    transform: translateY(-8px);
 }
 .menu-btn span::after {
-    transform: translateY(5px);
+    transform: translateY(8px);
 
 }
 .menu-btn_active span:before {

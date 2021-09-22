@@ -95,11 +95,12 @@ input {
 	padding: 14px 20px;
 	color: #fff;
 	border: 1px solid #9e9ee0;
-	
+	font-family: 'Montserrat', sans-serif;
 
 	&::placeholder {
 		color: #fff;
 		opacity: 40%;
+		font-family: 'Montserrat', sans-serif;
 	}
 
 }
@@ -111,6 +112,7 @@ textarea {
 	padding: 14px 20px;
 	color: #fff;
 	border: 1px solid #9e9ee0;
+	font-family: 'Montserrat', sans-serif;
 	
 
 	&::placeholder {

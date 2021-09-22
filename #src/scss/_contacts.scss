@@ -2,6 +2,9 @@
     width: 100%;
     padding: 132px 0 156px;
     min-height: calc(100vh - 314px);
+    @media screen and (max-width:480px) {
+        padding: 64px 0 116px;
+    }
     // .contacts__inner
 
     &__inner {
@@ -19,11 +22,18 @@
         display: flex;
         justify-content: space-between;
         margin-bottom: 95px;
+
+        @media screen and (max-width:480px) {
+            flex-direction: column;
+        }
     }
 
     // .contacts__item
 
-    &__item {
+    &__item + &__item {
+        @media screen and (max-width:480px) {
+            margin-top: 64px;
+        }
     }
 
     // .contacts__text

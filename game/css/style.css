@@ -101,31 +101,37 @@ input {
   padding: 14px 20px;
   color: #fff;
   border: 1px solid #9e9ee0;
+  font-family: "Montserrat", sans-serif;
 }
 
 input::-webkit-input-placeholder {
   color: #fff;
   opacity: 40%;
+  font-family: "Montserrat", sans-serif;
 }
 
 input::-moz-placeholder {
   color: #fff;
   opacity: 40%;
+  font-family: "Montserrat", sans-serif;
 }
 
 input:-ms-input-placeholder {
   color: #fff;
   opacity: 40%;
+  font-family: "Montserrat", sans-serif;
 }
 
 input::-ms-input-placeholder {
   color: #fff;
   opacity: 40%;
+  font-family: "Montserrat", sans-serif;
 }
 
 input::placeholder {
   color: #fff;
   opacity: 40%;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea {
@@ -135,6 +141,7 @@ textarea {
   padding: 14px 20px;
   color: #fff;
   border: 1px solid #9e9ee0;
+  font-family: "Montserrat", sans-serif;
 }
 
 textarea::-webkit-input-placeholder {
@@ -909,8 +916,8 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 30px;
-  height: 30px;
+  width: 32px;
+  height: 32px;
   border-radius: 50%;
   position: relative;
 }
@@ -922,8 +929,8 @@ h6 {
   top: 50%;
   margin-top: -1px;
   left: 50%;
-  margin-left: -10px;
-  width: 20px;
+  margin-left: -16px;
+  width: 32px;
   height: 2px;
   background-color: #E51BEF;
 }
@@ -938,15 +945,15 @@ h6 {
 }
 
 .menu-btn span::before {
-  -webkit-transform: translateY(-5px);
-      -ms-transform: translateY(-5px);
-          transform: translateY(-5px);
+  -webkit-transform: translateY(-8px);
+      -ms-transform: translateY(-8px);
+          transform: translateY(-8px);
 }
 
 .menu-btn span::after {
-  -webkit-transform: translateY(5px);
-      -ms-transform: translateY(5px);
-          transform: translateY(5px);
+  -webkit-transform: translateY(8px);
+      -ms-transform: translateY(8px);
+          transform: translateY(8px);
 }
 
 .menu-btn_active span:before {
@@ -1958,8 +1965,7 @@ h6 {
 
 .progress {
   width: 100%;
-  margin: 0 auto;
-  margin: 71px 0;
+  margin: 66px 0;
   /* Applies to all tooltips */
   /* Make the tooltips respond to hover */
   /* don't show empty tooltips */
@@ -1979,6 +1985,9 @@ h6 {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-bottom: 18px;
+  width: 100%;
+  min-width: 960px;
+  padding-top: 15px;
 }
 
 .progress__item--active .progress__circle::after {
@@ -2057,6 +2066,7 @@ h6 {
 
 .progress__bottom {
   width: 100%;
+  min-width: 960px;
   margin: 0 auto;
 }
 
@@ -3700,6 +3710,10 @@ h6 {
   margin: 0 auto;
 }
 
+.article__nav-wrap {
+  overflow-x: scroll;
+}
+
 .article__nav {
   width: 100%;
   display: -webkit-box;
@@ -4151,6 +4165,7 @@ h6 {
 
 .your-balance {
   margin-top: 72px;
+  padding-bottom: 50px;
 }
 
 .your-balance__title {
@@ -4583,6 +4598,10 @@ h6 {
   margin-bottom: 54px;
 }
 
+.delivery-popup__wrap {
+  overflow-y: scroll;
+}
+
 .delivery-popup__table {
   width: 100%;
   font-size: 14px;
@@ -4846,6 +4865,11 @@ h6 {
     margin: 0 auto 20px;
   }
 
+  .progress {
+    overflow-x: scroll;
+    padding-bottom: 15px;
+  }
+
   .article__row {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -4854,6 +4878,11 @@ h6 {
 
   .article__item {
     margin: 0 auto 20px;
+  }
+
+  .delivery-popup__inner {
+    max-width: 100%;
+    padding: 60px 20px;
   }
 }
 
@@ -4897,7 +4926,7 @@ h6 {
 
   .how .arrow-wrap {
     position: absolute;
-    top: 55%;
+    top: 66%;
   }
 
   .how .prev {
@@ -4933,11 +4962,10 @@ h6 {
 
   .table tr td {
     width: 50%;
-    text-align: center;
   }
 
   .plat {
-    padding: 50px 0;
+    padding: 0 0;
   }
 
   .plat__nav {
@@ -5221,6 +5249,24 @@ h6 {
   .popup__circle {
     display: none;
   }
+
+  .delivery-popup {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    overflow-y: scroll;
+  }
+
+  .delivery-popup__title {
+    font-size: 18px;
+    text-align: center;
+    max-width: 236px;
+    margin: 0 auto;
+  }
+
+  .delivery-popup__table {
+    overflow-x: scroll;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -5302,6 +5348,16 @@ h6 {
     right: 20px;
   }
 
+  .bonus__top {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .bonus__col + .bonus__col {
+    max-width: 230px;
+  }
+
   .profile__personal {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -5312,6 +5368,30 @@ h6 {
   .profile__column + .profile__column {
     margin-left: 0;
     margin-top: 40px;
+  }
+
+  .contacts {
+    padding: 64px 0 116px;
+  }
+
+  .contacts__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .contacts__item + .contacts__item {
+    margin-top: 64px;
+  }
+
+  .article {
+    padding: 40px 0;
+    overflow: hidden;
+  }
+
+  .article__nav {
+    min-width: 460px;
   }
 
   .popup .tabs > label {
@@ -5333,6 +5413,10 @@ h6 {
 
   .delivery__item-new-left {
     display: none;
+  }
+
+  .delivery-popup__search {
+    padding: 20px 50px;
   }
 }
 
