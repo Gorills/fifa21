@@ -5899,6 +5899,7 @@ h6 {
 
   .pay__way {
     margin-bottom: 16px;
+    max-width: 100%;
   }
 
   .article__item {
