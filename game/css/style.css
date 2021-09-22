@@ -5289,6 +5289,176 @@ h6 {
   color: #9E9EE0;
 }
 
+.register {
+  position: relative;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 999;
+  /* отобразить контент, связанный с вабранной радиокнопкой (input type="radio") */
+}
+
+.register--active {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.register__inner {
+  position: relative;
+  z-index: 1001;
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  position: relative;
+  width: 100%;
+  max-width: 840px;
+  overflow: hidden;
+  min-height: 580px;
+}
+
+.register__wrapper {
+  width: 100%;
+  max-width: 420px;
+  margin-right: 0;
+}
+
+.register__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.register__input {
+  width: 100%;
+}
+
+.register #content-1 .register__input {
+  margin-bottom: 35px;
+}
+
+.register #content-2 .register__input {
+  margin-bottom: 19px;
+}
+
+.register__forgot {
+  color: #9E9EE0;
+  font-size: 14px;
+  text-align: center;
+  margin-bottom: 36px;
+}
+
+.register__forgot a {
+  color: #FF14AB;
+  font-weight: 600;
+}
+
+.register__block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.register__block a + a {
+  margin-left: 20px;
+}
+
+.register .block__btn {
+  width: 100%;
+  margin-bottom: 24px;
+}
+
+.register__player {
+  position: absolute;
+  left: -50px;
+  bottom: -50px;
+  z-index: 999;
+}
+
+.register__circle {
+  border-radius: 50%;
+  height: 412px;
+  width: 412px;
+  position: absolute;
+  left: -60px;
+  bottom: -20px;
+  background-color: #BF0121;
+  -webkit-filter: blur(250px);
+          filter: blur(250px);
+  z-index: -1;
+}
+
+.register form {
+  margin-top: 34px;
+}
+
+.register .tabs {
+  font-size: 0;
+}
+
+.register .tabs > input[type=radio] {
+  display: none;
+}
+
+.register .tabs > div {
+  /* скрыть контент по умолчанию */
+  display: none;
+  font-size: 16px;
+}
+
+.register #tab-btn-1:checked ~ #content-1,
+.register #tab-btn-2:checked ~ #content-2,
+.register #tab-btn-3:checked ~ #content-3 {
+  display: block;
+}
+
+.register .tabs > label {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 45%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #9E9EE0;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  margin-right: 20px;
+}
+
+.register .tabs > label:not(:first-of-type) {
+  border-left: none;
+}
+
+.register .tabs > input[type=radio]:checked + label {
+  color: #fff;
+  border-color: #FF14AB;
+}
+
 @media screen and (max-width: 1366px) {
   .article__row {
     -ms-flex-pack: distribute;
@@ -5778,6 +5948,28 @@ h6 {
   .history-mobile {
     display: block;
   }
+
+  .register {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+
+  .register__inner {
+    min-height: 100%;
+  }
+
+  .register__wrapper {
+    max-width: 100%;
+  }
+
+  .register__player {
+    display: none;
+  }
+
+  .register__circle {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 576px) {
@@ -6003,10 +6195,19 @@ h6 {
   .refer-block {
     display: block;
   }
+
+  .register .tabs > label {
+    margin-right: 10px;
+    font-size: 14px;
+  }
 }
 
 @media screen and (max-height: 560px) {
   .popup__inner {
+    overflow-y: scroll;
+  }
+
+  .register__inner {
     overflow-y: scroll;
   }
 }
