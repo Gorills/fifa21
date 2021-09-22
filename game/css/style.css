@@ -3541,6 +3541,7 @@ h6 {
   max-width: 287px;
   border: 1px solid #9E9EE0;
   color: #fff;
+  cursor: pointer;
 }
 
 .pay__way:hover {
