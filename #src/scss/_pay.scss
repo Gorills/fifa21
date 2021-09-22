@@ -192,6 +192,9 @@
         &:hover {
             border-color: #E70873;
         }
+        &--active {
+            border-color: #E70873;
+        }
         @media screen and (max-width: 768px) {
             margin-bottom: 16px;
         }

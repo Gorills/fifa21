@@ -150,7 +150,7 @@
         display: inline-block;
         width: 100%;
         text-align: center;
-    }
+    } 
 
  
 
@@ -164,6 +164,11 @@
             border-bottom: 1px solid #474747;
             padding-bottom: 32px;
             margin-bottom: 32px;
+
+
+            &:last-child {
+                border-bottom: none;
+            }
         }
     }
 

@@ -137,6 +137,9 @@
             justify-content: center;
             align-items: center;
         }
+        @media screen and (max-width: 480px) {
+            margin-bottom: 0;
+        }
     }
 
     // .coins__column
@@ -195,9 +198,25 @@
         padding: 20px;
         font-size: 16px;
         font-weight: 600;
+        @media screen and (max-width: 480px) {
+            display: none;
+        }
 
         &:hover {
             transform: scale(1.05);
+        }
+
+        &--mobile {
+            width: 100%;
+            padding: 20px;
+            font-size: 16px;
+            font-weight: 600;
+            margin-top: 24px;
+            display: none;
+            @media screen and (max-width: 480px) {
+                display: block;
+            }
+
         }
     }
 }

@@ -3391,6 +3391,15 @@ h6 {
           transform: scale(1.05);
 }
 
+.coins__btn--mobile {
+  width: 100%;
+  padding: 20px;
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 24px;
+  display: none;
+}
+
 .pay {
   width: 100%;
   max-width: 600px;
@@ -3553,6 +3562,10 @@ h6 {
 }
 
 .pay__way:hover {
+  border-color: #E70873;
+}
+
+.pay__way--active {
   border-color: #E70873;
 }
 
@@ -5137,6 +5150,145 @@ h6 {
   display: block;
 }
 
+.table-ref {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 0;
+}
+
+.table-ref th {
+  text-align: start;
+  font-size: 12px;
+  color: #9E9EE0;
+  padding-bottom: 17px;
+  padding-left: 34px;
+}
+
+.table-ref td {
+  padding: 16px 34px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 500;
+  position: relative;
+  white-space: nowrap;
+}
+
+.table-ref tr:nth-child(even) {
+  background-color: #171727;
+}
+
+.table-ref__wrap--flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.table-ref__wrap--flex .table__top {
+  margin-right: 16px;
+}
+
+.table-ref__top {
+  margin-bottom: 4px;
+}
+
+.table-ref__bottom {
+  color: #9E9EE0;
+}
+
+.table-ref__cancell {
+  cursor: pointer;
+  position: absolute;
+  right: 45px;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  color: #F53B3B;
+}
+
+.table-ref__plus {
+  color: #43FFA5;
+}
+
+.table-ref__minus {
+  color: #F53B3B;
+}
+
+.table-ref__w {
+  width: 100%;
+}
+
+.table-ref__w a {
+  width: 100%;
+}
+
+.history__title {
+  text-align: center;
+  margin-bottom: 24px;
+  font-weight: 600;
+  display: none;
+}
+
+.refer-block {
+  display: none;
+}
+
+.refer-block__item {
+  background-color: #171727;
+  padding: 25px;
+  border-radius: 4px;
+}
+
+.refer-block__item + .refer-block__item {
+  margin-top: 16px;
+}
+
+.refer-block__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 21px;
+}
+
+.refer-block__balls {
+  color: #43FFA5;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.refer-block__date {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: end;
+}
+
+.refer-block__date span {
+  color: #9E9EE0;
+  text-align: end;
+}
+
+.refer-block__bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+.refer-block__numb {
+  color: #9E9EE0;
+}
+
 @media screen and (max-width: 1366px) {
   .article__row {
     -ms-flex-pack: distribute;
@@ -5268,7 +5420,7 @@ h6 {
   }
 
   .plat {
-    padding: 0 0;
+    padding: 0 0 50px 0;
   }
 
   .plat__nav {
@@ -5308,6 +5460,28 @@ h6 {
   }
 
   .table-his tr td {
+    width: 50%;
+  }
+
+  .table-ref th {
+    display: none;
+  }
+
+  .table-ref tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+
+  .table-ref tr td {
     width: 50%;
   }
 }
@@ -5685,6 +5859,10 @@ h6 {
     display: block;
   }
 
+  .balance__text {
+    font-weight: 600;
+  }
+
   .table__cancell {
     right: 20px;
   }
@@ -5729,6 +5907,18 @@ h6 {
     font-size: 12px;
   }
 
+  .coins__item {
+    margin-bottom: 0;
+  }
+
+  .coins__btn {
+    display: none;
+  }
+
+  .coins__btn--mobile {
+    display: block;
+  }
+
   .contacts {
     padding: 64px 0 116px;
   }
@@ -5768,6 +5958,10 @@ h6 {
     margin-bottom: 32px;
   }
 
+  .delivery__item-new:last-child {
+    border-bottom: none;
+  }
+
   .delivery__item-new-wrap {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -5791,6 +5985,22 @@ h6 {
   }
 
   .history__title {
+    display: block;
+  }
+
+  .table-ref {
+    display: none;
+  }
+
+  .table-ref__cancell {
+    right: 20px;
+  }
+
+  .history__title {
+    display: block;
+  }
+
+  .refer-block {
     display: block;
   }
 }
