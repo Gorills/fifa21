@@ -3557,16 +3557,21 @@ h6 {
   width: 100%;
   max-width: 287px;
   border: 1px solid #9E9EE0;
-  color: #fff;
+  color: #9E9EE0;
   cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
 }
 
 .pay__way:hover {
   border-color: #E70873;
+  color: #fff;
 }
 
 .pay__way--active {
   border-color: #E70873;
+  color: #fff;
 }
 
 .pay .custom-checkbox {
