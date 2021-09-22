@@ -101,12 +101,14 @@ input {
 	border: 1px solid #9e9ee0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
+	font-size: 16px;
 
 	&::placeholder {
 		color: #fff;
 		opacity: 40%;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 500;
+		font-size: 16px;
 	}
 
 }
@@ -120,6 +122,7 @@ textarea {
 	border: 1px solid #9e9ee0;
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 500;
+	font-size: 16px;
 	
 
 	&::placeholder {
@@ -127,6 +130,7 @@ textarea {
 		opacity: 40%;
 		font-family: 'Montserrat', sans-serif;
 		font-weight: 500;
+		font-size: 16px;
 	}
 }
 
