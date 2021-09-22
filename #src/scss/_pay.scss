@@ -144,6 +144,14 @@
 
     &__btn {
         font-weight: 600!important;
+        font-family: 'Montserrat', sans-serif;
+        border: 1px solid #E70873; 
+        width: 180px;
+        height: 48px;
+
+        &:hover {
+            font-family: 'Montserrat', sans-serif;
+        }
     }
 
     // .pay__title
