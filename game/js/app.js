@@ -167,4 +167,12 @@ function parallax(e){
  
 
 
-  
+
+$('.custom-checkbox').click(function() {
+    
+    $('.pay__btn-wrap').toggleClass('pay__btn-wrap--active');
+    $('.pay__way-wrap').toggleClass('pay__way-wrap--active');
+
+
+
+})

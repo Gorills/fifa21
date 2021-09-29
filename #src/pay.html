@@ -26,7 +26,7 @@
                 <a href="#" class="plat__link plat__link--active">2. Количество монет</a>
                 <a href="#" class="plat__link plat__link--active">3. Оплата</a>
                 <a href="#" class="plat__link">4. Ваш баланс</a>
-                <a href="#" class="plat__link">4. Доставка монет</a>
+                <a href="#" class="plat__link">5. Доставка монет</a>
             </div>
 
 
@@ -71,29 +71,40 @@
                     </div>
 
                 </div>
-                <p class="pay__title wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">Выберите способ оплаты:</p>
 
-                <div class="pay__wrap wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay=".5s">
-                    <!-- можно ссылками сделать -->
-                    <div class="pay__way">
-                        <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path d="M26.5203 0.759766H3.48027C1.71527 0.759766 0.280273 2.19477 0.280273 3.95977V18.0398C0.280273 19.8048 1.71527 21.2398 3.48027 21.2398H26.5203C28.2853 21.2398 29.7203 19.8048 29.7203 18.0398V3.95977C29.7203 2.19477 28.2853 0.759766 26.5203 0.759766ZM15.0003 11.6398H4.76027V10.3598H15.0003V11.6398ZM28.4403 8.43976H1.56027V5.23977H28.4403V8.43976Z" fill="white"/>
-                        </svg>
+                
 
-                        <p class="pay__way-text">Pay with Card</p>
+                <div class="pay__btn-wrap pay__btn-wrap--active wow animate__animated animate__bounceInUp" data-wow-duration="1s" data-wow-delay="1s">
 
-                    </div>
-
-                    <div class="pay__way pay__way--center">
-                        
-
-                        <p class="pay__way-text">Pay with PayOp</p>
-                        
-                    </div>
+                    <button class="btn-gradient pay__btn-pay">Оплатить</button>
 
 
                 </div>
 
+                <div class="pay__way-wrap">
+                    <p class="pay__title">Выберите способ оплаты:</p>
+
+                    <div class="pay__wrap">
+                        <!-- можно ссылками сделать -->
+                        <div class="pay__way">
+                            <svg width="30" height="22" viewBox="0 0 30 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M26.5203 0.759766H3.48027C1.71527 0.759766 0.280273 2.19477 0.280273 3.95977V18.0398C0.280273 19.8048 1.71527 21.2398 3.48027 21.2398H26.5203C28.2853 21.2398 29.7203 19.8048 29.7203 18.0398V3.95977C29.7203 2.19477 28.2853 0.759766 26.5203 0.759766ZM15.0003 11.6398H4.76027V10.3598H15.0003V11.6398ZM28.4403 8.43976H1.56027V5.23977H28.4403V8.43976Z" fill="white"/>
+                            </svg>
+
+                            <p class="pay__way-text">Pay with Card</p>
+
+                        </div>
+
+                        <div class="pay__way pay__way--center">
+                            
+
+                            <p class="pay__way-text">Pay with PayOp</p>
+                            
+                        </div>
+
+
+                    </div>
+                </div>
             </div>
             
             

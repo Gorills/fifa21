@@ -281,3 +281,21 @@ h6 {
 	cursor: pointer;
 
 } 
+
+
+.login {
+	display: block;
+	width: 100%;
+	max-width: 458px;
+	text-align: end;
+	font-weight: 500;
+    font-size: 18px;
+    line-height: 98%;
+    transition: all 0.3s ease;
+    text-align: right;
+    color: #FFFFFF;
+	&:hover {
+		color: #e51bef;
+	}
+}
+

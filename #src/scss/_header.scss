@@ -127,6 +127,8 @@
 
     &__wrap {
         display: inline-flex;
+        width: 35%;
+        max-width: 458px;
     }
 
     // .header__balance
