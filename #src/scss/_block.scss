@@ -226,11 +226,10 @@
         top: 50%;
         
         transform: translateY(-50%);
-        width: 484px;
-        height: 449px;
-        background: #E70873;
+        left: -50%;
+        // background: #E70873;
         opacity: 1;
-        filter: blur(300px);
+        // filter: blur(300px);
         z-index: -2;
         
 

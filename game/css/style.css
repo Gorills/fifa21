@@ -1160,12 +1160,8 @@ h6 {
   -webkit-transform: translateY(-50%);
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
-  width: 484px;
-  height: 449px;
-  background: #E70873;
+  left: -50%;
   opacity: 1;
-  -webkit-filter: blur(300px);
-          filter: blur(300px);
   z-index: -2;
 }
 
