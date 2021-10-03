@@ -3469,22 +3469,37 @@ h6 {
 }
 
 .pay__old {
-  font-size: 14px;
-  color: #8B8B93;
-  text-decoration: line-through;
+  font-size: 18px;
+  color: #fff;
 }
 
 .pay__old span {
   font-weight: 600;
+  color: #E51BEF;
+}
+
+.pay__old--active {
+  text-decoration: line-through;
+  font-size: 14px;
+  color: #8B8B93;
+}
+
+.pay__old--active span {
+  color: #8B8B93;
 }
 
 .pay__new {
   font-size: 18px;
+  display: none;
 }
 
 .pay__new span {
   font-weight: 600;
   color: #E51BEF;
+}
+
+.pay__new--active {
+  display: block;
 }
 
 .pay__check-wrapper {
@@ -3576,7 +3591,7 @@ h6 {
 }
 
 .pay__way-wrap {
-  display: none;
+  display: block;
 }
 
 .pay__way-wrap--active {

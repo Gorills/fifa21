@@ -5,7 +5,7 @@ $('.how__slider').slick({
     dots: false,
     arrows: true,
     infinite: true,
-    speed: 300,
+    speed: 1500,
     slidesToShow: 1,
     adaptiveHeight: true, 
     prevArrow: "<div class='arrow-wrap prev'><img src='img/icons/prev.png' alt=''></div>",
@@ -132,8 +132,8 @@ function parallax(e){
     this.querySelectorAll('.layer').forEach(layer => {
 
         const speed = layer.getAttribute('data-speed')
-        const x = (window.innerWidth - e.pageX*speed) / 100
-        const y = (window.innerHeight - e.pageY*speed) / 100
+        const x = (window.innerWidth - e.pageX*speed) / 200
+        const y = (window.innerHeight - e.pageY*speed) / 200
 
         layer.style.transform = `translateX(${x}px) translateY(${y}px)`;
 
@@ -172,6 +172,9 @@ $('.custom-checkbox').click(function() {
     
     $('.pay__btn-wrap').toggleClass('pay__btn-wrap--active');
     $('.pay__way-wrap').toggleClass('pay__way-wrap--active');
+    $('.pay__old').toggleClass('pay__old--active');
+    $('.pay__new').toggleClass('pay__new--active');
+
 
 
 
