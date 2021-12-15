@@ -5094,6 +5094,10 @@ h6 {
   white-space: nowrap;
 }
 
+.table-his td:last-child {
+  min-width: 200px;
+}
+
 .table-his tr:nth-child(even) {
   background-color: #171727;
 }

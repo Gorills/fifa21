@@ -26,6 +26,9 @@
         font-weight: 500;
         position: relative;
         white-space: nowrap;
+        &:last-child {
+            min-width: 200px;
+        }
     }
 
     tr {
