@@ -1,10 +1,18 @@
+.popup-login {
+    display: none;
+}
+
+.popup-signup {
+    display: none;
+}
+
 .popup {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    display: none;
+    
     align-items: center;
     justify-content: center;
     z-index: 999;
@@ -72,6 +80,42 @@
         cursor: pointer;
     }
 
+    // .popup__wrapper
+    &__wrapp {
+        display: flex;
+    }
+    // .popup__link
+
+    &__link {
+        color: #9E9EE0;
+        display: inline-block;
+        text-align: center;
+        vertical-align: middle;
+        user-select: none;
+        width: 45%;
+        padding-bottom: 12px;
+        border-bottom: 1px solid #9E9EE0;
+        font-size: 16px;
+        line-height: 1.5;
+        transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+        cursor: pointer;
+        position: relative;
+        top: 1px;
+        margin-right: 20px;
+        font-weight: 500;
+
+        &--active {
+            color: #fff;
+            border-color: #E70873;
+        }
+    }
+
+    // .popup__form
+
+    &__form {
+        width: 100%;
+    }
+
     // .popup__input
 
 
@@ -79,17 +123,10 @@
     &__input {
         
         width: 100%;
+        margin-bottom: 19px;
     }
-    #content-1 {
-        .popup__input {
-            margin-bottom: 35px;
-        }
-
-    }
-    #content-2 {
-        .popup__input {
-            margin-bottom: 19px;
-        }
+    button {
+        margin-top: 32px;
     }
 
     // .popup__forgot

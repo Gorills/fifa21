@@ -529,7 +529,7 @@
 
 <!-- для вызова popup класс кнопки show-popup -->
 
-<div class="popup">
+<div class="popup popup-signup">
     <div class="popup__closer"></div>
 
     <div class="popup__inner">
@@ -540,37 +540,13 @@
 
             <img src="img/icons/cancel.svg" alt="" class="popup__close">
 
-            <div class="tabs">
-                <input type="radio" name="tab-btn" id="tab-btn-1" class="tab-btn-1" value="" checked>
-                <label for="tab-btn-1">Авторизация</label>
-                <input type="radio" name="tab-btn" id="tab-btn-2" value="">
-                <label for="tab-btn-2">Регистрация</label>
+           		 <div class="popup__wrapp">
                 
-                
-                <div id="content-1">
-                    <form action="#">
-
-                        <label for="">E-mail</label>
-                        <input type="text" class="popup__input" placeholder="Введите почту">
-                        <label for="">Пароль</label>
-                        <input type="text" class="popup__input" placeholder="Введите пароль">
-
-                        <button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Авторизоваться</button>
-
-                    </form>
-                    
-                    <p class="popup__forgot">Забыли пароль?  <a href="">Восстановить</a></p>
-
-
-                    <div class="popup__block">
-                        <a href="" class="block__btn block__btn-primary btn-google"><img src="img/icons/google-plus.svg" alt="">Google</a>
-                        <a href="" class="block__btn block__btn-primary btn-facebook"><img src="img/icons/facebook.svg" alt="">Facebook</a>
-
-                    </div>
+					<a class="popup__link popup_login_active" href="#">Авторизация</a>
+					
+					<a class="popup__link popup__link--active popup_sign_active" href="#">Регистрация</a>
                 </div>
-                <div id="content-2">
-
-                    <form action="#">
+                    <form class="popup__form" action="#">
 
                         <label for="">Имя</label>
                         <input type="text" class="popup__input" placeholder="Введите имя">
@@ -581,7 +557,7 @@
                         
                         <label for="">Пароль</label>
                         <input type="text" class="popup__input" placeholder="Введите пароль">
-                        <label for="">Повторите праоль</label>
+                        <label for="">Повторите пароль</label>
                         <input type="text" class="popup__input" placeholder="Повторите пароль">
 
                         <button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Зарегистрироваться</button>
@@ -592,8 +568,7 @@
 
 
         
-                </div>
-            </div>
+            
            
         </div>
 
@@ -603,7 +578,58 @@
     </div>
 </div>
 
+<!-- для вызова popup класс кнопки show-popup -->
 
+<div class="popup popup-login">
+    <div class="popup__closer"></div>
+
+    <div class="popup__inner">
+
+
+
+        <div class="popup__wrapper">
+
+            <img src="img/icons/cancel.svg" alt="" class="popup__close">
+
+			<div class="popup__wrapp">
+                
+				<a class="popup__link popup_login_active popup__link--active" href="#">Авторизация</a>
+				
+				<a class="popup__link popup_sign_active" href="#">Регистрация</a>
+			</div>
+                
+                
+                
+			<form action="#">
+
+				<label for="">E-mail</label>
+				<input type="text" class="popup__input" placeholder="Введите почту">
+				<label for="">Пароль</label>
+				<input type="text" class="popup__input" placeholder="Введите пароль">
+
+				<button class="block__btn block__btn-primary btn-gradient"><img src="img/icons/login.svg" alt=""> Авторизоваться</button>
+
+			</form>
+			
+			<p class="popup__forgot">Забыли пароль?  <a href="">Восстановить</a></p>
+
+
+			<div class="popup__block">
+				<a href="" class="block__btn block__btn-primary btn-google"><img src="img/icons/google-plus.svg" alt="">Google</a>
+				<a href="" class="block__btn block__btn-primary btn-facebook"><img src="img/icons/facebook.svg" alt="">Facebook</a>
+
+			</div>
+               
+                
+            
+           
+        </div>
+
+        <img src="img/popup-player.png" alt="" class="popup__player">
+        <div class="popup__circle"></div>
+
+    </div>
+</div>
 
 
 <div class="mobile-footer mobile-footer--active">

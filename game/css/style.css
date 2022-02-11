@@ -4140,13 +4140,20 @@ h6 {
   counter-increment: li;
 }
 
+.popup-login {
+  display: none;
+}
+
+.popup-signup {
+  display: none;
+}
+
 .popup {
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -4205,16 +4212,52 @@ h6 {
   cursor: pointer;
 }
 
-.popup__input {
+.popup__wrapp {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.popup__link {
+  color: #9E9EE0;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  width: 45%;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #9E9EE0;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  -o-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out;
+  cursor: pointer;
+  position: relative;
+  top: 1px;
+  margin-right: 20px;
+  font-weight: 500;
+}
+
+.popup__link--active {
+  color: #fff;
+  border-color: #E70873;
+}
+
+.popup__form {
   width: 100%;
 }
 
-.popup #content-1 .popup__input {
-  margin-bottom: 35px;
+.popup__input {
+  width: 100%;
+  margin-bottom: 19px;
 }
 
-.popup #content-2 .popup__input {
-  margin-bottom: 19px;
+.popup button {
+  margin-top: 32px;
 }
 
 .popup__forgot {

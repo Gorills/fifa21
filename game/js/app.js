@@ -18,13 +18,27 @@ $('.how__slider').slick({
 $('.show-popup').click(function(e){
     e.preventDefault();
 
-    $('.popup').addClass('popup--active')
+    $('.popup-login').addClass('popup--active')
 })
 
 $('.popup__closer, .popup__close').click(function(e){
     e.preventDefault();
 
     $('.popup').removeClass('popup--active')
+})
+
+$('.popup_sign_active').click(function(e){
+    e.preventDefault();
+
+    $('.popup-login').removeClass('popup--active')
+    $('.popup-signup').addClass('popup--active')
+})
+
+$('.popup_login_active').click(function(e){
+    e.preventDefault();
+
+    $('.popup-login').addClass('popup--active')
+    $('.popup-signup').removeClass('popup--active')
 })
 
 $('.show-search').click(function(e){
