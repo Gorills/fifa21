@@ -98,12 +98,13 @@ body {
 
 input {
   background-color: #13131D;
-  padding: 14px 20px;
+  padding: 0 20px;
   color: #fff;
   border: 1px solid #9e9ee0;
   font-family: "Montserrat", sans-serif;
   font-weight: 500;
   font-size: 16px;
+  height: 49;
 }
 
 input::-webkit-input-placeholder {
